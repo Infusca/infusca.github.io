@@ -12,16 +12,13 @@
         grid-gap: 30px;
     }
 
-    .gallery{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-    }
 }
 
 /* TABLET OR IPAD SIZE */
 
 @media screen and (max-width: 800px){
-    
+
+
     #nav{
         display: block;
         text-align: center;
@@ -59,11 +56,6 @@
         width: 100%;
     }
 
-    .gallery{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
-    
 }
 
 /* PHONE SIZE */
@@ -72,15 +64,24 @@
 
     .website-name{
         font-size: 20px;
+        display: flex;
+        margin: auto;
+        justify-content: center;
     }
     
     #nav{
-        display: block;
+        display: none;
         text-align: center;
     }
 
     #nav li{
         padding: 3px;
+    }
+
+    .nav-dots{
+        display: block;
+        margin-bottom: 5px;
+        width: 30%;
     }
 
     .pets img{
@@ -103,19 +104,11 @@
         display: block;
     }
 
-    #mainImage-container{
-        /* width: 100%; */
-    }
-
     .image-container img{
         width: 100%;
         min-width: 200px;
     }
 
-    /* .gallery div{
-        display: grid;
-        grid-template-columns: 1fr;
-    } */
     
 }
 

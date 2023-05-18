@@ -4,9 +4,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title> Smoke on Horizon </title>
-    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/soh.css">-->
-    <!-- <link rel="stylesheet" href="css/about.css">  -->
     <link rel="stylesheet" href="css/newcss.css">
     <link rel="stylesheet" href="css/media.css">
     <link rel="stylesheet" href="css/gallery.css">
@@ -16,6 +13,7 @@
     <header class="row">
       <div class="website-name">
         <a href="index.html">Smoke on Horizon</a>
+        <div class="nav-dots" onclick="toggleNav()"> . . . </div>
       </div>
       <ul id="nav">
       <li><a href="about.html">about</a></li>
@@ -37,11 +35,17 @@
         <p> I started metal detecting in 2018 with the Garrett Ace 400. Not too long after that I upgrade to the Equinox 600. I upgraded again to the Equinox 900 this past Decemeber 2022. Below is a gallery of the best stuff I've found. </p>
       </section>
 
+      <section class="break">
+        <hr class="break">
+        <div class="break"> <h5> Relics and Coins Gallery </h5> </div>
+        <hr class="break">
+      </section>
+
       <section class="gallery">
               
         <div class="">
           <img src="images/metal/etched_silver_cufflink.jpg">
-            <img src="images/metal/etched_silver_cufflink_back.jpg">
+            <!-- <img src="images/metal/etched_silver_cufflink_back.jpg"> -->
             <p> <b>Etched silver cufflink. Circa 1700s.</b> </p>
             <p>This is by far one of my most favorite finds. I found it on an old cart path in the woods in my neighborhood. To not only to pull <i>silver</i> out of the hole, but silver that is 300 years old, and etched by hand! Truly amazing.
             Another cool story regarding this, fastforward 4 years later on the exact day, 12-29-22, <a href="https://www.youtube.com/@StefDigs" target="new window">StefDigs</a> was detecting in a different area of the same woods and found the exact same thing! Hers is slightly larger, and bent, but exact same design. </p>
@@ -49,7 +53,7 @@
         
         <div class="">
           <img src="images/metal/worn_pewter_button.jpg">
-          <img src="images/metal/worn_pewter_button_back.jpg">
+          <!-- <img src="images/metal/worn_pewter_button_back.jpg"> -->
           <p> <b> Pewter button, likely 1600s </b> </p>
           <p> 
             Pewter button with drilled shank, worn down. This was found on the same cart path just several feet away from the silver cufflink.</p>
@@ -71,7 +75,7 @@
           <div id="mass-copper">
             <p> <b>Massachussetts copper, 1787 (reverse).</b> Found in CT. </p>
             <img src="images/metal/mass_copper_reverse.jpg">
-            <img src="images/metal/mass_copper_obverse.jpg" style="float:right">
+            <!-- <img src="images/metal/mass_copper_obverse.jpg" style="float:right"> -->
             I found this in the yard of a 1732 house, smack in the middle of the small back yard.</p>  
           </div>
         </article>
@@ -119,7 +123,7 @@
           <div class="non-dug">
             <p> Example from <a href="https://en.numista.com/catalogue/pieces73640.html" target="new window">Numista</a></p>
             <img id="pfennig" src="images/metal/pfennig-obv.jpg">
-            <img id="pfennig" src="images/metal/pfennig-rev.jpg">
+            <!-- <img id="pfennig" src="images/metal/pfennig-rev.jpg"> -->
           </div>
         </article>
 
@@ -175,20 +179,19 @@
           </div>
         </article>
 
-      </main>
+      </section>
 
 <!-- * * * * * end of main content * * * * * end of main content * * * * * end of main content * * * * end of main content * * * * -->
 
-<footer>
-  <p class="footer"> &copy 2023 Smoke on Horizon</p>
-</footer>
+      <footer>
+        <hr>
+        <p> &copy 2023 Smoke on Horizon</p>
+      </footer>
 
 
 
-<script src="js/jquery3.6.0.js"></script>
-<script src="js/js.js"></script>
-
-
+      <script src="js/jquery3.6.0.js"></script>
+      <script src="js/js.js"></script>
 
   </body>
 </html>

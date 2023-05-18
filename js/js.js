@@ -51,6 +51,10 @@ $('.close').click(function(){
 
 
 
+
+// ??
+
+
 function showTemplate(){
   var temp = document.getElementsByTagName('template')[0];
   var temp2 = $('.template')[0];
@@ -111,8 +115,18 @@ function findHt(){
   document.getElementsByClassName('container')[0].style.height = newHt;
   console.log(`viewportHeight: ${viewportHeight}, containerHeight: ${containerHeight}`);
 }
+// findHt();
 
-findHt();
+// allow user to access hidden nav on smaller screens
+let nav = $('#nav');
+
+function toggleNav(){
+  if (nav[0].style.display == 'none'){
+    nav[0].style.display = 'block';
+  } else {
+    nav[0].style.display = 'none';
+  }
+}
 
 
 
