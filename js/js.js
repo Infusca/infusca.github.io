@@ -1,0 +1,145 @@
+$(document).ready(function(){
+
+  // $('#hiddenTitle').hide()
+
+// animate page title when scroll down on page
+// NOT WORKING NEED TO FIGURE OUT
+  showSticky = $('.sticky')
+  if ($(document.body.scrollTop) > 150){
+    console.log('hi')
+  }
+  
+  
+
+// regarding old posts "archives"
+  $('.archived').hide();
+  $('#2021').click(function(){
+    $('.21').toggle();
+  });
+  $('#2022').click(function(){
+    $('.22').toggle();
+  });
+  
+  $('.lyrics').hide();
+
+// get target image and display modal
+$('.cd-img').click(function(e){
+  target = e.target;
+  targetID = target.id;
+  src = target.src;
+  img = getImg(src);
+  var modalImg = $('#modal-img')[0];
+  modalImg.src = '/images/music/' + img;
+  myModal.style.display = 'block';
+})
+
+// obtain file name of target image
+function getImg(src){
+  var targetImg;
+  targetImg = src.split();
+  fileName = targetImg[0].split('/')[5];
+  return fileName;
+}
+
+
+// close modal
+$('.close').click(function(){
+  myModal.style.display = 'none';
+})
+
+
+
+
+
+function showTemplate(){
+  var temp = document.getElementsByTagName('template')[0];
+  var temp2 = $('.template')[0];
+  var clon = temp2.content.clondeNode(true);
+  document.body.appendChild(clon);
+  console.log(clon);
+}
+
+
+
+});
+
+
+
+
+
+/*********** NEW LAYOUT ************/
+
+
+
+function hideHeader(){
+  let header = document.getElementsByTagName("header")[0];
+  header.style.opacity = "0.2";
+
+  window.addEventListener('mousemove', (e) => {
+    let xPos = e.clientX;
+    let yPos = e.clientY; 
+    if (yPos < 25){
+        header.style.opacity = '1';
+      };
+    if (e.clientY < 15){
+      header.style.opacity = '1';
+    }
+  });
+
+  if (scrollY > 50){
+    header.style.display = 'none';
+  };
+
+  if (scrollY < 50){
+    header.style.display = 'block';
+  }
+
+  if (scrollY == 0){
+    header.style.opacity = '1';
+  }
+  
+
+
+};
+
+/******** make height of container at so that footer is below bottom of viewport ********/
+function findHt(){
+  let viewportHeight = window.innerHeight;
+  let containerHeight = $('.container')[0].offsetHeight;
+  let newHt = '(containerHeight + 10)px';
+  console.log(`viewportHeight: ${viewportHeight}, containerHeight: ${containerHeight}`);
+  document.getElementsByClassName('container')[0].style.height = newHt;
+  console.log(`viewportHeight: ${viewportHeight}, containerHeight: ${containerHeight}`);
+}
+
+findHt();
+
+
+
+
+  /********** Show pet stories when click on image **********/
+  // window.addEventListener('click', (e) => {
+  //   console.log(e.currentTarget.parent);
+  // });
+  
+  // window.body.addEventListener('click', (e) => {
+  //   console.log(e);
+  // });
+
+
+
+/* hide nav on small screens */
+// main = document.getElementsByClassName('container');
+//   window.addEventListener('click', (e) => {
+//     document.getElementById('nav').style.display = 'none';
+//     document.getElementById('small-screen-nav-lines').style.display = 'block';
+    
+  // document.getElementById('small-screen-nav-lines').style.display = block;
+  // });
+
+  // window.addEventListener('click', (e) => {
+  //   document.getElementById('small-screen-nav-lines').style.display = 'block';
+    
+  // // document.getElementById('small-screen-nav-lines').style.display = block;
+  // });
+

@@ -1,0 +1,125 @@
+/* LARGER TABLET / SMALL LAPTOP */
+
+@media screen and (max-width: 1100px){
+
+    .pets img{
+        padding: 0px; width: 100%;
+    }
+
+    #pets{
+        display: grid; 
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 30px;
+    }
+
+    .gallery{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+/* TABLET OR IPAD SIZE */
+
+@media screen and (max-width: 800px){
+    
+    #nav{
+        display: block;
+        text-align: center;
+    }
+
+    #nav li{
+        padding: 5px;
+    }
+
+    .pets img{
+        padding: 0px; width: 100%;
+    }
+
+    #pets{
+        display: grid; 
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 30px;
+    }
+
+    .container{
+        margin: 50px;
+    }
+
+    section{
+        display: block;
+    }
+
+    #stef{
+        display: block;
+    }
+
+    .image-container{
+        float: none;
+        margin: auto;
+        width: 100%;
+    }
+
+    .gallery{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+}
+
+/* PHONE SIZE */
+
+@media screen and (max-width: 500px){
+
+    .website-name{
+        font-size: 20px;
+    }
+    
+    #nav{
+        display: block;
+        text-align: center;
+    }
+
+    #nav li{
+        padding: 3px;
+    }
+
+    .pets img{
+        padding: 0px; width: 100%;
+    }
+
+    #pets{
+        display: block; 
+    }
+
+    .container{
+        margin: 20px;
+    }
+
+    section{
+        display: block;
+    }
+
+    #stef{
+        display: block;
+    }
+
+    #mainImage-container{
+        /* width: 100%; */
+    }
+
+    .image-container img{
+        width: 100%;
+        min-width: 200px;
+    }
+
+    /* .gallery div{
+        display: grid;
+        grid-template-columns: 1fr;
+    } */
+    
+}
+
+
+
+
+

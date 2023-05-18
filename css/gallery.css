@@ -1,0 +1,24 @@
+.gallery section div p{
+    display: ;
+}
+
+.gallery{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.gallery img{
+    width: 100%;
+    padding: 1px;
+    box-shadow: 1px 1px 4px;
+    border-radius: 5px;
+}
+
+.gallery{
+    /* text-align: center;
+    border: black;
+    border-style: solid;
+    font-size: 1.2vw; */
+    /* min-width: 100px; */
+}
