@@ -64,7 +64,6 @@ function showTemplate(){
 }
 
 
-
 });
 
 
@@ -128,32 +127,7 @@ function toggleNav(){
   }
 }
 
-
-
-
-  /********** Show pet stories when click on image **********/
-  // window.addEventListener('click', (e) => {
-  //   console.log(e.currentTarget.parent);
-  // });
-  
-  // window.body.addEventListener('click', (e) => {
-  //   console.log(e);
-  // });
-
-
-
-/* hide nav on small screens */
-// main = document.getElementsByClassName('container');
-//   window.addEventListener('click', (e) => {
-//     document.getElementById('nav').style.display = 'none';
-//     document.getElementById('small-screen-nav-lines').style.display = 'block';
-    
-  // document.getElementById('small-screen-nav-lines').style.display = block;
-  // });
-
-  // window.addEventListener('click', (e) => {
-  //   document.getElementById('small-screen-nav-lines').style.display = 'block';
-    
-  // // document.getElementById('small-screen-nav-lines').style.display = block;
-  // });
-
+function expandArticle(){
+  var target = $('sub')[0].innerHTML;
+  console.log(target);
+}

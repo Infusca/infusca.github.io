@@ -9,36 +9,72 @@
     
   </head>
 
-  <body onscroll="hideHeader()">
+  <body onscroll="hideHeader()"> 
     
       <header id="header" class="row">
         <div class="website-name">
-          <a href="index.html">Smoke on Horizon</a>
+          <p data-content=""> Smoke on Horizon </p>
           <div class="nav-dots" onclick="toggleNav()"> . . . </div>
+          <ul id="nav">
+            <li><a href="index.html">home</a></li>
+            <li><a href="about.html">about</a></li>
+            <li><a href="code.html">coding</a></li>
+            <li><a href="photo.html">photography</a></li>
+            <li><a href="turnkey.html">wood turning</a></li>
+            <li><a href="music.html">music</a></li>
+            <li><a href="hotsauce.html">hot sauce</a></li>
+            <li><a href="metal.html">metal detecting</a></li>
+           </ul>
         </div>
-       <ul id="nav">
-        <li><a href="about.html">about</a></li>
-        <li><a href="code.html">coding</a></li>
-        <li><a href="photo.html">photography</a></li>
-        <li><a href="turnkey.html">wood turning</a></li>
-        <li><a href="music.html">music</a></li>
-        <li><a href="hotsauce.html">hot sauce</a></li>
-        <li><a href="metal.html">metal detecting</a></li>
-       </ul>
       </header>
 
-      <div class="container" >
+      <div class="main" class="container" >
+
+        <section class="bg-top-img"></section>
         
-        <section id="main">
-          <div class="image-container"> <img src="images/posts/wizard-petrie.jpg"/> </div>
-          <div>
-            <h4> First Post - New Layout! </h4>
-            <p> Welcome to the new responsive layout of 2023! I've updated the look slightly from my previous design but the biggest change is that now my website is fully responsive [to different viewing devices]. </p>
-            <p> The domain name "Smokeonhorizon.com" is not updated yet to reflect this new layout and github repository but I'm working on it now. </p>
-            <p> Photo: My Little Wizard. Just a cute picture of Petrie for your viewing pleasure. </p>
-            <p class="date"> - 5.18.23 - </p>
-          </div>
-        </section>
+        <div id="index-content" class="content">
+
+          <section>
+            <embed type="video/webm" src="https://www.youtube.com/embed/Khmm5ZlSsvU?start=2" height="300">
+            <div>
+              <h4> Latest video from Ren </h4>
+              <p> An acoustic version of his latest song <i> Animal</i>. <br>
+              <sub onclick="expandArticle()"> see more ... </sub> </p>
+              <p> You all should know by now how much I love Ren. He's an up and coming talented musician/artist and has done it all on his own with friends and help from fans - no record company or label - while dealing with autoimmunity and mental illness. </p>
+              
+            </div>
+          </section>
+
+          <section>
+            <img src="images/posts/wizard-petrie.jpg"/>
+             <div>
+               <h4 onclick=showArticle()> First Post - New Layout! </h4>
+               <p> Welcome to the new responsive layout of 2023! I've updated the look slightly from my previous design but the biggest change is that now my website is fully responsive [to different viewing devices]. </p>
+               <p> The domain name "Smokeonhorizon.com" is not updated yet to reflect this new layout and github repository but I'm working on it now. </p>
+               <p> Photo: My Little Wizard. Just a cute picture of Petrie for your viewing pleasure. </p>
+               <p class="date"> - 5.18.23 - </p>
+             </div>
+           </section>
+ 
+           <!-- <section>
+             <img src="images/posts/wizard-petrie.jpg"/>
+             <div>
+               <h4> pharmacy news </h4>
+               
+             </div>
+           </section>
+ 
+           <section>
+             <img src="images/posts/wizard-petrie.jpg"/>
+             <div>
+               <h4> science news </h4>
+               
+             </div>
+           </section> -->
+
+
+        </div>
+
       </div>
 
 

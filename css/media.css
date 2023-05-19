@@ -67,6 +67,7 @@
         display: flex;
         margin: auto;
         justify-content: center;
+        text-shadow: 1px 1px rgba(100, 180, 255, .75);
     }
     
     #nav{
@@ -113,6 +114,23 @@
 }
 
 
-
-
+/* 
+@keyframes shadow{
+    0%{
+    background: linear-gradient(90deg, rgb(141, 52, 52) 0%, blue 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    }
+    50%{
+        background: linear-gradient(90deg, rgb(141, 52, 52) 0%, blue 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    100%{
+        background: linear-gradient(90deg, rgb(141, 52, 52) 0%, blue 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        }
+    
+} */
 
