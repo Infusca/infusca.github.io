@@ -13,11 +13,12 @@
 
   <body onscroll="hideHeader()">
 
-    <header id="header" class="row">
-      <div class="website-name">
-        <p data-content=""> Smoke on Horizon </p>
-        <div class="nav-dots" onclick="toggleNav()"> . . . </div>
-        <ul id="nav">
+    <header>
+      <div class="title-bar">
+        <p> Smoke on Horizon </p>
+        <div class="tribar" onclick="toggleNav()"> ≡ </div>
+      </div>
+        <ul class="nav">
           <li><a href="index.html">home</a></li>
           <li><a href="about.html">about</a></li>
           <li><a href="code.html">coding</a></li>
@@ -27,14 +28,13 @@
           <li><a href="hotsauce.html">hot sauce</a></li>
           <li><a href="metal.html">metal detecting</a></li>
          </ul>
-      </div>
     </header>
 
-    <div class="container">
+    <main id="about" class="container">
 
       <!-- ME -->
-      <section id="me">
-        <div id="myImage" class="image-container"> <img id="my-image" src="images/about/me_sc.jpg"/> </div>
+      <section id="me" class="bio">
+        <div id="myImage" class="image-container"> <img src="images/about/me_sc.jpg"/> </div>
         <div>
           <p> Hi, my name is Nichola Holcomb. </p>
           <p> I am a pharmacist. I work in retail, at Walgreens. I have worked for Walgreens since about 2018 or so, when they bought out Rite Aid. I was with Rite Aid originally since 2005 when I was an intern in college. </p>
@@ -58,8 +58,8 @@
       </section>
 
       <!-- STEF -->
-      <section id="stef">
-        <div id="stefImage" class="image-container"> <img src="images/about/stef.jpg" alt="Stef"> </div>
+      <section id="stef" class="bio">
+        <div class="image-container"> <img src="images/about/stef.jpg" alt="Stef"> </div>
           <div class="about">
             <p> I live with my partner Stef, since 2014, in my house, which is a beautiful log cabin home, in the woods. </p>
             <p> When I met Stef, she was an insurance agent. She has since left that to follow a dream in metal detecting. She has worked hard via social media to grow a following and now is affiliated with Minelab (one of the largest metal detecting companies). She is a Minelab Detexpert and also works for <a href="dddetectors.com">The Diggers Den</a>, a dealer, to sell metal detectors and equipment. She has a youtube channel and also has written several articles for <a href="https://diggermagazine.com">Digger Magazine</a> and has had some of her finds shown in the magazine as well as on the cover. She also is a talented musician, albeit out of practice, and can play bass, guitar, and drums. </p>
@@ -77,9 +77,9 @@
       </section>
 
       <section class="break">
-        <hr class="break">
+        <div><hr class="break"></div>
         <div class="break"> <h5> Pets </h5> </div>
-        <hr class="break">
+        <div><hr class="break"></div>
       </section>
 
       <!-- LIVE PETS -->
@@ -116,9 +116,9 @@
       </section>
 
       <section class="break">
-        <hr class="break">
+        <div><hr class="break"></div>
         <div class="break"> <h5> Affiliates and Friends </h5> </div>
-        <hr class="break">
+        <div><hr class="break"></div>
       </section>
 
       <section id="associated">

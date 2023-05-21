@@ -12,37 +12,46 @@ a{
     color: black;
     text-decoration: none;
     font-variant: small-caps;
-    /* font-weight: bold; */
 }
 
 p{
-    font-size: 14px;
-    /* padding-bottom: 10px; */
+    font-size: 12px;    
+}
+
+#index-content hr{
+    width: 10px;
+    background-color: black;
+    margin: auto;
+    border: 0;
+    height: 1px;
 }
 
 h5{
-    padding-bottom: 10px;
+    padding-bottom: 5px;
     font-variant: small-caps;
 }
 
 
 hr.break{
     background-color: black;
-    height: 3px;
-    width: 30%;
+    height: 2px;
+    width: 100%;
     min-width: 20px;
-    box-shadow: 1px 1px 4px rgb(230, 80, 0);
+    box-shadow: 1px 1px 4px rgb(230, 80, 0, 75%);
 }
 
 section.break{
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     padding: 10px;
     margin-top: 100px;
 }
 
 div.break{
-    width: 35%;
+    justify-content: center;
 }
+
+
 
 .break h5{
     padding: 0px 10px;
@@ -51,7 +60,6 @@ div.break{
 
 /**************** HEADER ****************/
 header{
-/* background-color: black; */
 width: 100%;
 justify-content: center; 
 flex-wrap: nowrap;
@@ -60,38 +68,38 @@ top: 0px;
 right: 0px;
 }
 
-.website-name{
+header{
     background-color: black;
     font-size: 50px;
     text-align: center;
   }
   
-.website-name p{
+header p{
     color: black;
     text-shadow: 2px 2px rgb(230, 80, 0);
     font-size: 60px;
     font-variant: small-caps;
 }
 
-.website-name a:hover{
+header a:hover{
     text-shadow: 2px 2px rgb(250, 60, 0, 0.5);
 }
 
-#nav{
+.nav{
     font-size: 14px;
     display: flex;
     justify-content: center;
 }
 
-#nav li{
+.nav li{
     padding: 10px;
 }
 
-#nav a{
+.nav a{
     color:rgba(190, 190, 230, 0.75);
 }
 
-#nav a:hover{
+.nav a:hover{
     font-size: 15px;
 }
 
@@ -104,41 +112,53 @@ ul{
     padding: 0px;
 }
 
-.nav-dots{
+.tribar{
     display: none;
     color:rgb(250, 80, 0)
 }
 
 /**************** BODY ****************/
 .container {
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-    bottom: 0px;
+    display: block;
+    /* text-align: center; */
+    /* bottom: 0px; */
 }
 
 #index-content{
-    margin: 0px 100px;
+    margin: 0px 30px 30px 30px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 100px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 30px;
 }
 
-#index-content section{
+#index-content article{
     border: solid 1px;
-    /* height: 200px; ADD SEE MORE...LINK TO SEE FULL  */
+    margin-bottom: 15px;
+    background-color: rgb(160, 170, 200);
+}
+
+#index-content div{
+    height: auto;
 }
 
 #index-content img{
+    width: 50%;
+    float: left;
+}
+
+.video-container{
+    padding-bottom: 50%;
+}
+
+.video-container embed{
+    postion: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
+    height: 100%;
 }
 
-.main{
-    display: flex;
-    flex-direction: column;
-}
-
-.bg-top-img{
+#bg-top-img{
     background-image: url('klaserie_sunset_over_trees.JPG');
     background-size: cover;
     background-position: center;
@@ -149,6 +169,13 @@ ul{
     padding: 10px;
 }
 
+#index-content-headings{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 30px;
+    margin: 0px 30px 30px 30px;
+}
+
 section{
     display: flex;
     flex-direction: column;
@@ -157,22 +184,20 @@ section{
     text-align: center;
 }
 
-.content h4{
+h4{
     font-variant: small-caps;
-    margin: 10px;
+    padding: 3px 0px;
 }
 
 section p{ padding: 10px; }
 
 
-section div{
-    height: 100px;
-    overflow: auto;
+.bio{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
-section sub{
 
-}
 
 .image-container{
     width: 80em;
@@ -201,6 +226,25 @@ section sub{
     max-width: 400px;
 }
 
+#about, #code{
+    margin: 30px;
+}
+
+#about, #code{
+    margin-top: 160px;
+    /* max-width: 1200px; */
+}
+
+#me, #stef{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+
+#myImage{
+    margin-right: 50px;
+}
+
 #myImage img{
     width: 100%;
     min-width: 100px;
@@ -210,6 +254,10 @@ section sub{
 .image-container img{
     width: 100%;
     min-width: 75px;
+}
+
+#stef img{
+    width: 55%;
 }
 
 #pets{
@@ -255,9 +303,66 @@ img.favicons{
     margin: 10px 5px;
 }
 
+#stef p.favicons{
+    width: 30px;
+    margin: auto;
+}
+
+#stef p.favicons img{
+    width: 100%;
+}
+
 #minelab-logo{
     width: 50px;
 }
+
+
+
+/* CODE */
+#projects{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+}
+
+#code h4{
+    border: none;
+}
+
+.desc{
+    display: block;
+    width: 60%;
+    margin: auto;
+    
+    /* margin-bottom: 50px; */
+}
+
+#code img{
+    width: 50%;
+    max-width: 400px;
+    min-width: 100px;
+    float: left;
+    padding: 5px;
+}
+
+.project p{
+    text-align: left;
+}
+
+.project-title{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    float: left;
+}
+
+.project div{
+    border: solid black;
+}
+
+
+/* END OF CODE */
+
 
 
 /* END OF ABOUT */

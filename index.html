@@ -11,71 +11,117 @@
 
   <body onscroll="hideHeader()"> 
     
-      <header id="header" class="row">
-        <div class="website-name">
-          <p data-content=""> Smoke on Horizon </p>
-          <div class="nav-dots" onclick="toggleNav()"> . . . </div>
-          <ul id="nav">
-            <li><a href="index.html">home</a></li>
-            <li><a href="about.html">about</a></li>
-            <li><a href="code.html">coding</a></li>
-            <li><a href="photo.html">photography</a></li>
-            <li><a href="turnkey.html">wood turning</a></li>
-            <li><a href="music.html">music</a></li>
-            <li><a href="hotsauce.html">hot sauce</a></li>
-            <li><a href="metal.html">metal detecting</a></li>
-           </ul>
-        </div>
-      </header>
+    <header>
+      <div class="title-bar">
+        <p> Smoke on Horizon </p>
+        <div class="tribar" onclick="toggleNav()"> ≡ </div>
+      </div>
+        <ul class="nav">
+          <li><a href="index.html">home</a></li>
+          <li><a href="about.html">about</a></li>
+          <li><a href="code.html">coding</a></li>
+          <li><a href="photo.html">photography</a></li>
+          <li><a href="turnkey.html">wood turning</a></li>
+          <li><a href="music.html">music</a></li>
+          <li><a href="hotsauce.html">hot sauce</a></li>
+          <li><a href="metal.html">metal detecting</a></li>
+         </ul>
+    </header>
 
-      <div class="main" class="container" >
+      <main id="index" class="container">
 
-        <section class="bg-top-img"></section>
-        
-        <div id="index-content" class="content">
+        <section id="bg-top-img"></section>
+<!-- 
+        <section id="index-content-headings"> 
+          <div> <h4> Updates </h4> </div>
+          <div> <h4> Music </h4> </div>
+          <div> <h4> Science </h4> </div>
+          <div> <h4> Rx </h4> </div>
+        </section> -->
 
-          <section>
-            <embed type="video/webm" src="https://www.youtube.com/embed/Khmm5ZlSsvU?start=2" height="300">
+
+        <section id="index-content" class="content">
+
+          <!-- <section id="index-content-my-blog"> -->
+            <!-- <div class="article-title"> <h4>title</h4> </div> -->
+            <article>
+              <img src="images/posts/wizard-petrie.jpg"/>
+              <div><h4>title</h4>
+                <h5 onclick=showArticle()> Second Post </h5> <hr>
+                <p> More updates to the layout. Final touches being made. Temp. post.</p>
+              </div>
+            </article>
+
+            <div class="article-title"> <h4>title</h4> </div>
+            <article>
+              <img src="images/posts/wizard-petrie.jpg"/>
+              <div>
+                <h5 onclick=showArticle()> First Post - New Layout! </h5>
+                <p> Welcome to the new responsive layout of 2023! I've updated the look slightly from my previous design but the biggest change is that now my website is fully responsive [to different viewing devices]. </p>
+                <p> The domain name "Smokeonhorizon.com" is not updated yet to reflect this new layout and github repository but I'm working on it now. </p>
+                <p> Photo: My Little Wizard. Just a cute picture of Petrie for your viewing pleasure. </p>
+                <p class="date"> - 5.18.23 - </p>
+              </div>
+            </article>
+          <!-- </section> -->
+
+          <!-- <section id="index-content-music"> -->
+            <article>
+              <div class="video-container"><embed type="video/webm" src="https://www.youtube.com/embed/Khmm5ZlSsvU?start=2" height=""></div>
+              <div>
+                <h5> Latest video from Ren </h5>
+                <!-- <p> An acoustic version of his latest song <i> Animal</i>. <br>
+                <sub onclick="expandArticle()"> see more ... </sub> </p>
+                <p> You all should know by now that I love Ren. He's an up and coming very talented musician/artist and has done it all on his own with friends and help from fans - no record company or label - while dealing on and off with autoimmunity and mental illness. </p> -->
+              </div>
+            </article>
+            <article>
+              <div class="video-container"><embed type="video/webm" src="https://www.youtube.com/embed/jezKuWYQ05c" height=""></div>
+              <div>
+                <h5> An unreleased treasure from Ren </h5>
+                <!-- <p> An acoustic version of his latest song <i> Animal</i>. <br>
+                <sub onclick="expandArticle()"> see more ... </sub> </p>
+                <p> You all should know by now that I love Ren. He's an up and coming very talented musician/artist and has done it all on his own with friends and help from fans - no record company or label - while dealing on and off with autoimmunity and mental illness. </p> -->
+                
+              </div>
+            </article>
+          <!-- </section> -->
+
+          
+          <!-- <section id="index-content-science"> -->
+            <article>
+              <img src="images/posts/wizard-petrie.jpg"/>
+              <div>
+                <h5> pharmacy news </h5>
+              </div>
+            </article>
+            <article>
+              <img src="images/posts/wizard-petrie.jpg"/>
+              <div>
+                <h4> science news </h4>
+              </div>
+            </article>
+          <!-- </section> -->
+
+          <!-- <section id="index-content-rx"> -->
+            <article>
+              <div class="video-container"><embed type="video/webm" src="https://www.youtube.com/embed/Khmm5ZlSsvU?start=2" height="300"></div>
             <div>
               <h4> Latest video from Ren </h4>
-              <p> An acoustic version of his latest song <i> Animal</i>. <br>
-              <sub onclick="expandArticle()"> see more ... </sub> </p>
-              <p> You all should know by now how much I love Ren. He's an up and coming talented musician/artist and has done it all on his own with friends and help from fans - no record company or label - while dealing with autoimmunity and mental illness. </p>
-              
             </div>
-          </section>
-
-          <section>
-            <img src="images/posts/wizard-petrie.jpg"/>
-             <div>
-               <h4 onclick=showArticle()> First Post - New Layout! </h4>
-               <p> Welcome to the new responsive layout of 2023! I've updated the look slightly from my previous design but the biggest change is that now my website is fully responsive [to different viewing devices]. </p>
-               <p> The domain name "Smokeonhorizon.com" is not updated yet to reflect this new layout and github repository but I'm working on it now. </p>
-               <p> Photo: My Little Wizard. Just a cute picture of Petrie for your viewing pleasure. </p>
-               <p class="date"> - 5.18.23 - </p>
-             </div>
-           </section>
- 
-           <!-- <section>
-             <img src="images/posts/wizard-petrie.jpg"/>
-             <div>
-               <h4> pharmacy news </h4>
-               
-             </div>
-           </section>
- 
-           <section>
-             <img src="images/posts/wizard-petrie.jpg"/>
-             <div>
-               <h4> science news </h4>
-               
-             </div>
-           </section> -->
+            </article>
+            <article>
+              <div class="video-container"><embed type="video/webm" src="https://www.youtube.com/embed/Khmm5ZlSsvU?start=2" height="300"></div>
+              <div>
+                <h4> Latest video from Ren </h4>
+              </div>
+            </article>
+          <!-- </section> -->
 
 
-        </div>
+        </section>
 
-      </div>
+      </main>
 
 
 
