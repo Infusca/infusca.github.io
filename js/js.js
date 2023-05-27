@@ -71,11 +71,16 @@ function showTemplate(){
 
 
 /*********** NEW LAYOUT ************/
+let header = document.getElementsByTagName("header")[0];
+let headerHt = header.offsetHeight;
 
 
+(function(){
+  
+});
 
 function hideHeader(){
-  let header = document.getElementsByTagName("header")[0];
+ 
   header.style.opacity = "0.2";
 
   window.addEventListener('mousemove', (e) => {
@@ -117,7 +122,7 @@ function findHt(){
 // findHt();
 
 // allow user to access hidden nav on smaller screens
-let nav = $('#nav');
+let nav = $('.nav');
 
 function toggleNav(){
   if (nav[0].style.display == 'none'){
@@ -125,6 +130,8 @@ function toggleNav(){
   } else {
     nav[0].style.display = 'none';
   }
+
+
 }
 
 function expandArticle(){
