@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 * { margin: 0; font-family: verdana;}
 
 ul {
@@ -455,3 +456,462 @@ footer hr{
     margin: 50px 0px;
     border: 0;
 }
+=======
+* { margin: 0; font-family: verdana;}
+
+ul {
+    list-style-type: none;
+}
+
+body{
+    background: linear-gradient(60deg, rgb(30 50 100) 0%, rgb(200 200 230) 100%)
+  }
+
+a{
+    color: black;
+    text-decoration: none;
+    font-variant: small-caps;
+}
+
+p{
+    font-size: 12px;    
+}
+
+#index-content hr{
+    width: 10px;
+    background-color: black;
+    margin: auto;
+    border: 0;
+    height: 1px;
+}
+
+h5{
+    padding-bottom: 5px;
+    font-variant: small-caps;
+}
+
+
+hr.break{
+    background-color: black;
+    height: 2px;
+    width: 100%;
+    min-width: 20px;
+    box-shadow: 1px 1px 4px rgb(230, 80, 0, 75%);
+}
+
+section.break{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 10px;
+    margin-top: 100px;
+}
+
+div.break{
+    justify-content: center;
+}
+
+
+
+.break h5{
+    padding: 0px 10px;
+}
+
+
+/**************** HEADER ****************/
+header{
+width: 100%;
+justify-content: center; 
+flex-wrap: nowrap;
+position: fixed;
+top: 0px;
+right: 0px;
+}
+
+header{
+    background-color: black;
+    font-size: 50px;
+    text-align: center;
+  }
+  
+header p{
+    color: black;
+    text-shadow: 2px 2px rgb(230, 80, 0);
+    font-size: 60px;
+    font-variant: small-caps;
+}
+
+header a:hover{
+    text-shadow: 2px 2px rgb(250, 60, 0, 0.5);
+}
+
+.nav{
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+}
+
+.nav li{
+    padding: 10px;
+}
+
+.nav a{
+    color:rgba(190, 190, 230, 0.75);
+}
+
+.nav a:hover{
+    font-size: 15px;
+}
+
+
+a:hover{
+    text-shadow: 1px 1px rgba(250, 60, 0, 0.8);
+}
+
+ul{
+    padding: 0px;
+}
+
+.tribar{
+    display: none;
+    color:rgb(250, 80, 0)
+}
+
+/**************** BODY ****************/
+.container {
+    display: block;
+    /* text-align: center; */
+    /* bottom: 0px; */
+}
+
+#index-content{
+    margin: 0px 30px 30px 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 30px;
+}
+
+#index-content article{
+    border: solid 1px;
+    margin-bottom: 15px;
+    background-color: rgb(160, 170, 200);
+}
+
+#index-content div{
+    height: auto;
+}
+
+#index-content img{
+    width: 50%;
+    float: left;
+}
+
+.video-container{
+    padding-bottom: 50%;
+}
+
+.video-container embed{
+    postion: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#bg-top-img{
+    background-image: url('klaserie_sunset_over_trees.JPG');
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+}
+
+#index-content a{
+    padding: 10px;
+}
+
+#index-content-headings{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 30px;
+    margin: 0px 30px 30px 30px;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+    min-width: 150px;
+    text-align: center;
+}
+
+h4{
+    font-variant: small-caps;
+    padding: 3px 0px;
+}
+
+section p{ padding: 10px; }
+
+#update{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0px 30px;
+}
+
+#update img{
+    width: 80%;
+}
+
+#update div{
+    display: block;
+}
+
+#update .hidden{
+    display: none;
+    position: absolute;
+    top: 0px;
+    background-color: rgba(190, 190, 230, 0.75);
+    width: 100%;
+}
+
+#update .hidden img{
+    width: 50%;
+    margin: auto;
+}
+
+#update .hidden p{
+    width: 80%;
+    margin: auto;
+}
+
+.close{
+    position: absolute;
+    top: 10px;
+    right: 50px;
+}
+
+
+
+/* ABOUT */
+
+.bio{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+
+.image-container{
+    width: 80em;
+    float: left;
+    width: 100%;
+}
+
+.codeImage-container{
+    width: 80em;
+    float: left;
+}
+
+.codeImage-container img{
+    width: 100%;
+    min-width: 100px;
+    max-width: 400px;
+}
+
+#mainImage-container{
+    width: 80em;
+}
+
+#mainImage-container img{
+    width: 100%;
+    min-width: 100px;
+    max-width: 400px;
+}
+
+#about, #code{
+    margin: 30px;
+}
+
+#about, #code{
+    margin-top: 160px;
+    /* max-width: 1200px; */
+}
+
+#me, #stef{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+
+#myImage{
+    margin-right: 50px;
+}
+
+#myImage img{
+    width: 100%;
+    min-width: 100px;
+    max-width: 400px;
+}
+
+.image-container img{
+    width: 100%;
+    min-width: 75px;
+}
+
+#stef img{
+    width: 55%;
+}
+
+#pets{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 30px;
+}
+
+#pets img{
+    width: 100%;
+}
+
+.pet{
+    border: black;
+    border-style: solid;
+    font-size: 1.2vw;
+    margin: 5px 0px 5px 0px;
+}
+
+#associated{
+    display: block;
+}
+
+#associated-links{
+    padding: 20px;
+    font-size: 12px;
+}
+
+#associated-links a{
+    color: rgba(0, 0, 0);
+}
+
+#associated-links li{
+    margin: 5px;
+}
+
+.photo-credit{
+    font-size: 10px;
+}
+
+img.favicons{
+    width: 30px;
+    margin: 10px 5px;
+}
+
+#stef p.favicons{
+    width: 30px;
+    margin: auto;
+}
+
+#stef p.favicons img{
+    width: 100%;
+}
+
+#minelab-logo{
+    width: 50px;
+}
+
+
+
+/* CODE */
+#projects{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+}
+
+#code h4{
+    border: none;
+}
+
+.desc{
+    display: block;
+    width: 60%;
+    margin: auto;
+    
+    /* margin-bottom: 50px; */
+}
+
+#code img{
+    width: 50%;
+    max-width: 400px;
+    min-width: 100px;
+    float: left;
+    padding: 5px;
+}
+
+.project p{
+    text-align: left;
+}
+
+.project-title{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    float: left;
+}
+
+.project div{
+    border: solid black;
+}
+
+
+/* END OF CODE */
+
+
+
+/* END OF ABOUT */
+
+/* WOOD */
+
+#wood{
+    display: block;
+    text-align: center;
+}
+
+.logo{
+    width: 300px;
+    margin-bottom: 50px;
+}
+
+#wood p{
+    /* margin: 50px; */
+}
+
+/* END OF WOOD */
+
+
+#metal-desc{
+    grid-template-columns: 2fr 2fr;
+}
+
+
+.under_construction{
+    display: block;
+}
+
+
+
+/**************** FOOTER ****************/
+footer{
+    margin: 50px 0px;
+    font-variant: small-caps;
+    text-align: center;
+    font-size: 12px;
+    color: rgb(0, 0, 0);
+    /* padding: 20px; */
+  }
+
+footer hr{
+    width: 100%;
+    background-color: black;
+    height: 1px;
+    margin: 50px 0px;
+    border: 0;
+}
+>>>>>>> f4a73edb0c51d238bd2ea813f5e2d83dd47503b8
