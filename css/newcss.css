@@ -12,13 +12,10 @@ a{
     color: black;
     text-decoration: none;
     font-variant: small-caps;
-    /* font-weight: bold; */
 }
 
 p{
-    font-size: 12px;
-    /* padding-bottom: 10px; */
-    
+    font-size: 12px;    
 }
 
 #index-content hr{
@@ -63,7 +60,6 @@ div.break{
 
 /**************** HEADER ****************/
 header{
-/* background-color: black; */
 width: 100%;
 justify-content: center; 
 flex-wrap: nowrap;
@@ -142,11 +138,7 @@ ul{
 }
 
 #index-content div{
-    /* border: solid 1px; */
-    
     height: auto;
-    /* padding-bottom: 15px; */
-    /* height: 200px; ADD SEE MORE...LINK TO SEE FULL  */
 }
 
 #index-content img{
@@ -194,12 +186,52 @@ section{
 
 h4{
     font-variant: small-caps;
-    border: solid 1px black;
     padding: 3px 0px;
 }
 
 section p{ padding: 10px; }
 
+#update{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0px 30px;
+}
+
+#update img{
+    width: 80%;
+}
+
+#update div{
+    display: block;
+}
+
+#update .hidden{
+    display: none;
+    position: absolute;
+    top: 0px;
+    background-color: rgba(190, 190, 230, 0.75);
+    width: 100%;
+}
+
+#update .hidden img{
+    width: 50%;
+    margin: auto;
+}
+
+#update .hidden p{
+    width: 80%;
+    margin: auto;
+}
+
+.close{
+    position: absolute;
+    top: 10px;
+    right: 50px;
+}
+
+
+
+/* ABOUT */
 
 .bio{
     display: grid;

@@ -138,3 +138,13 @@ function expandArticle(){
   var target = $('sub')[0].innerHTML;
   console.log(target);
 }
+
+function foodBlog(){
+  let blog = $('.hidden')[0];
+  if (blog.style.display == 'none'){
+    blog.style.display = 'block';
+  } else {
+    blog.style.display = 'none';
+  }
+  
+}
