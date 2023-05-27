@@ -191,6 +191,47 @@ h4{
 
 section p{ padding: 10px; }
 
+#update{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0px 30px;
+}
+
+#update img{
+    width: 80%;
+}
+
+#update div{
+    display: block;
+}
+
+#update .hidden{
+    display: none;
+    position: absolute;
+    top: 0px;
+    background-color: rgba(190, 190, 230, 0.75);
+    width: 100%;
+}
+
+#update .hidden img{
+    width: 50%;
+    margin: auto;
+}
+
+#update .hidden p{
+    width: 80%;
+    margin: auto;
+}
+
+.close{
+    position: absolute;
+    top: 10px;
+    right: 50px;
+}
+
+
+
+/* ABOUT */
 
 .bio{
     display: grid;
