@@ -15,106 +15,6 @@ a{
 }
 
 p{
-    font-size: 14px;
-}
-
-h5{
-    padding-bottom: 10px;
-}
-
-section p{ padding: 10px; }
-
-
-
-/**************** HEADER ****************/
-header{
-background-color: black;
-width: 100%;
-justify-content: center; 
-flex-wrap: nowrap;
-position: fixed;
-top: 0px;
-right: 0px;
-}
-
-.website-name{
-    font-size: 50px;
-    text-align: center;
-    text-shadow: 2px 2px rgba(100, 180, 255, .75);
-  }
-  
-.website-name a{
-    color: rgba(100, 100, 255, .75);
-}
-
-.website-name a:hover{
-    text-shadow: 2px 2px rgb(250, 60, 0, 0.5);
-}
-
-#nav{
-    font-size: 14px;
-    display: flex;
-    justify-content: center;
-}
-
-#nav li{
-    padding: 10px;
-}
-
-#nav a{
-    color:rgba(190, 190, 230, 0.75);
-}
-
-#nav a:hover{
-    font-size: 15px;
-}
-
-
-a:hover{
-    text-shadow: 1px 1px rgba(250, 60, 0, 0.8);
-}
-
-ul{
-    padding: 0px;
-}
-
-
-
-/**************** FOOTER ****************/
-footer{
-    margin-top: 20px;
-    font-variant: small-caps;
-    text-align: center;
-    font-size: 12px;
-    color: rgb(0, 0, 0);
-    /* padding: 20px; */
-  }
-
-footer hr{
-    width: 100%;
-    background-color: black;
-    height: 1px;
-    margin: 50px 0px;
-    border: 0;
-}
-=======
-* { margin: 0; font-family: verdana;}
-
-ul {
-    list-style-type: none;
-}
-
-body{
-    background: linear-gradient(60deg, rgb(30 50 100) 0%, rgb(200 200 230) 100%)
-  }
-
-a{
-    color: black;
-    text-decoration: none;
-    font-variant: small-caps;
-}
-
-p{
     font-size: 12px;    
 }
 
@@ -251,7 +151,6 @@ ul{
 }
 
 .video-container embed{
-    postion: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -472,7 +371,7 @@ img.favicons{
 
 .desc{
     display: block;
-    width: 60%;
+    width: 80%;
     margin: auto;
     
     /* margin-bottom: 50px; */
@@ -520,10 +419,6 @@ img.favicons{
     margin-bottom: 50px;
 }
 
-#wood p{
-    /* margin: 50px; */
-}
-
 /* END OF WOOD */
 
 
@@ -555,4 +450,3 @@ footer hr{
     margin: 50px 0px;
     border: 0;
 }
->>>>>>> f4a73edb0c51d238bd2ea813f5e2d83dd47503b8
