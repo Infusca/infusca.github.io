@@ -1,31 +1,31 @@
 $(document).ready(function(){
 
-// obtain file name of target image
-// function getImg(src){
-//   var targetImg;
-//   targetImg = src.split();
-//   fileName = targetImg[0].split('/')[5];
-//   return fileName;
-// }
+  // obtain file name of target image
+  // function getImg(src){
+  //   var targetImg;
+  //   targetImg = src.split();
+  //   fileName = targetImg[0].split('/')[5];
+  //   return fileName;
+  // }
 
 
-// close modal
-// $('.close').click(function(){
-//   myModal.style.display = 'none';
-// })
+  // close modal
+  // $('.close').click(function(){
+  //   myModal.style.display = 'none';
+  // })
 
 
 
-// function showTemplate(){
-//   var temp = document.getElementsByTagName('template')[0];
-//   var temp2 = $('.template')[0];
-//   var clon = temp2.content.clondeNode(true);
-//   document.body.appendChild(clon);
-//   console.log(clon);
-// }
+  // function showTemplate(){
+  //   var temp = document.getElementsByTagName('template')[0];
+  //   var temp2 = $('.template')[0];
+  //   var clon = temp2.content.clondeNode(true);
+  //   document.body.appendChild(clon);
+  //   console.log(clon);
+  // }
 
 
-// });
+  // });
 
 
 
