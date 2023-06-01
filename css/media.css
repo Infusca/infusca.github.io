@@ -39,7 +39,6 @@
     .nav li{
         padding: 5px;
     }
-
     #index-content{
         grid-template-columns: 1fr 1fr;
     }
@@ -54,6 +53,9 @@
         grid-gap: 30px;
     }
 
+    .container{
+        margin: 50px;
+    }
 
     section{
         display: block;
@@ -148,7 +150,9 @@
         display: block; 
     }
 
-
+    .container{
+        margin: 20px;
+    }
 
     section{
         display: block;
