@@ -9,53 +9,137 @@
     
   </head>
 
-  <body onscroll="hideHeader()">
+  <body onscroll="hideHeader()"> 
     
-      <header id="header" class="row">
-        <div class="website-name">
-          <a href="index.html">Smoke on Horizon</a>
-          <!-- <div id="small-screen-nav-lines">
-            <p>nav</p>
-           </div> -->
-        </div>
-       <ul id="nav">
-        <li><a href="about.html">about</a></li>
-        <li><a href="code.html">coding</a></li>
-        <li><a href="photo.html">photography</a></li>
-        <li><a href="turnkey.html">wood turning</a></li>
-        <li><a href="music.html">music</a></li>
-        <li><a href="hotsauce.html">hot sauce</a></li>
-        <li><a href="metal.html">metal detecting</a></li>
-       </ul>
-       
-      </header>
-
-      <div class="container" > <!-- span viewport width of container: class="container-fluid" -->
-        
-        <section id="main">
-          <div class="image-container"> <img src="images/posts/wizard-petrie.jpg"/> </div>
-          <div>
-            <h4> Thursday Post </h4>
-            <p>Welcome to the new responsive layout of 2023! I've updated the look slightly from my previous design but the biggest change is that now my website is fully responsive [to different viewing devices]. </p>
-            <p> Picture to left: My Little Wizard. Just a cute picture of Petrie for your viewing pleasure. </p>
-            <p class="date"> - 5.18.23 - </p>
-          </div>
-        </section>
+    <header>
+      <div class="title-bar">
+        <p> Smoke on Horizon </p>
+        <div class="tribar" onclick="toggleNav()"> ≡ </div>
       </div>
+        <ul class="nav">
+          <li><a href="index.html">home</a></li>
+          <li><a href="about.html">about</a></li>
+          <li><a href="code.html">coding</a></li>
+          <li><a href="photo.html">photography</a></li>
+          <li><a href="turnkey.html">wood turning</a></li>
+          <li><a href="music.html">music</a></li>
+          <li><a href="hotsauce.html">hot sauce</a></li>
+          <li><a href="metal.html">metal detecting</a></li>
+         </ul>
+    </header>
+
+      <main id="index" class="container">
+
+        <section id="bg-top-img"></section>
+        <section class="break">
+          <div><hr class="break"></div>
+          <div class="break"> <h4> Updates and Other News </h4> </div>
+          <div><hr class="break"></div>
+        </section>
+
+
+        <!-- Top NEWS section -->
+        <section id="update" class="content">
+          
+          <div>
+            <img src="images/photo/blueberry-buds.jpeg"/>
+            <h5> My Blossoming Blueberry Bush</h5>
+            <p> Nothing really going on here. I just hope this year the birds don't steal all the blueberries the second they are ripe... or maybe even before!</p>
+          </div>
+
+          <div>
+            <img src="images/hotSauce/arbol-chili/5-arbol-chili.jpeg"/>
+            <h5> New HOT SAUCE!! Arbol Chili</h5>
+            <p> Click <a href="#" onclick="foodBlog()">here</a> to read about it. </p>
+            <p><a href="mailto:infusca@proton.me"> Email me</a> <br>if you're interested in obtaining any hot sauce for yourself!</p>
+          </div> 
+
+          <div class="hidden">
+            <h1>Fire Woman Hot Sauce:</h1><br><h2>Arbol Chili</h2>
+            <div class="close"><h3 onclick="foodBlog()">X</h3></div>
+            <p>So, I've been making my own hot sauce. Fun, and now I never need to buy hot sauce again! Although I probably will. Especially if I travel abroad because there's nothing like trying the local hot sauce on your breakfast eggs.</p>
+            <p>So this weeks hot sauce is an arbol chili sauce, with tomatoes, onions, and garlic. </p>
+              <img src="images/hotSauce/arbol-chili/arbol-bag.jpeg"/>
+              <p>I used 20 arbol chilis and let them soak for an hour in a bowl of warm water. They actually needed to soak longer than that and I ran out of time so then I boiled them in some water for about 5 minutes which plumped them up right away.</p>
+              <img src="images/hotsauce/arbol-chili/dried-arbol-soaking.jpeg"/>
+            
+            <p> Meanwhile, I mixed up the onions and tomatoes with some oil, salt, and pepper and placed them on some foil to grill. I then cut off the top of an entire head of garlic and poured a little olive oil over it before placing in foil to grill as well.  </p>
+              <img src="images/hotSauce/arbol-chili/tom-onion-foil.jpeg"/>
+            <p> After everything is cooked, I blended together in the food processor, added vinegar, and voilà! Delicious hot sauce.</p>
+            <p> I forgot to continue taking photos of the process so unfortunetatly all you get to see now is the end result.</p>
+              <img src="images/hotSauce/arbol-chili/5-arbol-chili.jpeg"/>
+            <p> Always feel free to <a href="mailto:infusca@proton.me">reach out</a> to me if you are interested in purchasing any hot sauce! They run at $5 a bottle + shipping. </p>
+           <p><h3 onclick="foodBlog()">Close X</h3></p>
+          </div>
+
+        </section>
+
+        <!-- OLD News section -->
+
+        <section class="break">
+          <div><hr class="break"></div>
+          <div class="break"> <h4> Old News </h4> </div>
+          <div><hr class="break"></div>
+        </section>
+
+        <section id="index-content" class="content">
+
+            <article>
+              <img src="images/posts/wizard-petrie.jpg"/>
+              <div><h4>Second Post</h4>
+                <hr>
+                <p> More updates to the layout. Final touches being made. Temp. post.</p>
+              </div>
+            </article>
+
+            <article>
+              <img src="images/posts/wizard-petrie.jpg"/>
+              <div><h4>First Post - New Layout!</h4>
+                <hr>
+                <p> Welcome to the new responsive layout of 2023! I've updated the look slightly from my previous design but the biggest change is that now my website is fully responsive [to different viewing devices]. </p>
+                <p> The domain name "Smokeonhorizon.com" is not updated yet to reflect this new layout and github repository but I'm working on it now. </p>
+                <p> Photo: My Little Wizard. Just a cute picture of Petrie for your viewing pleasure. </p>
+                <p class="date"> - 5.18.23 - </p>
+              </div>
+            </article>
+
+            <article>
+              <div class="video-container"><embed type="video/webm" src="https://www.youtube.com/embed/Khmm5ZlSsvU?start=2" height=""></div>
+              <div>
+                <h5> Latest video from Ren </h5>
+                <!-- <p> An acoustic version of his latest song <i> Animal</i>. <br>
+                <sub onclick="expandArticle()"> see more ... </sub> </p>
+                <p> You all should know by now that I love Ren. He's an up and coming very talented musician/artist and has done it all on his own with friends and help from fans - no record company or label - while dealing on and off with autoimmunity and mental illness. </p> -->
+              </div>
+            </article>
+            <article>
+              <div class="video-container"><embed type="video/webm" src="https://www.youtube.com/embed/jezKuWYQ05c" height=""></div>
+              <div>
+                <h5> An unreleased treasure from Ren </h5>
+                <!-- <p> An acoustic version of his latest song <i> Animal</i>. <br>
+                <sub onclick="expandArticle()"> see more ... </sub> </p>
+                <p> You all should know by now that I love Ren. He's an up and coming very talented musician/artist and has done it all on his own with friends and help from fans - no record company or label - while dealing on and off with autoimmunity and mental illness. </p> -->
+                
+              </div>
+            </article>
+
+
+        </section>
+
+      </main>
 
 
 
 <!-- * * * * * end of main content * * * * * end of main content * * * * * end of main content * * * * end of main content * * * * -->
 
       <footer>
-        <p>-</p><br>
-        <p class="footer"> &copy 2023 Smoke on Horizon</p>
+        <hr>
+        <p> &copy 2023 Smoke on Horizon</p>
       </footer>
-
-
 
       <script src="js/jquery3.6.0.js"></script>
       <script src="js/js.js"></script>
 
   </body>
 </html>
+>>>>>>> f4a73edb0c51d238bd2ea813f5e2d83dd47503b8
