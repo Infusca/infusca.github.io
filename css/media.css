@@ -1,36 +1,6 @@
-<<<<<<< HEAD
 /* LARGER TABLET / SMALL LAPTOP */
 
-
-
-
-
 @media screen and (max-width: 1100px){
-
-    #index-content{
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-gap: 15px;
-    }
-
-    /* hidden blog */
-    #update .hidden{
-        margin: 0px;
-        width: 100%;
-        left: 0px;
-    }
-
-    .close{
-        position: absolute;
-        top: 10px;
-        right: 10px;
-    }
-
-    /* about page */
-
-    #me, #stef{
-        margin-left: 50px;
-        margin-right: 50px;
-    }
 
     .pets img{
         padding: 0px; width: 100%;
@@ -48,53 +18,22 @@
     }
 }
 
-
-
 /* TABLET OR IPAD SIZE */
 
 @media screen and (max-width: 800px){
 
+    header p{
+        font-size: 40px;
+    }
 
     .nav{
-        display: block;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
         text-align: center;
     }
 
-    .nav li{
+    #nav li{
         padding: 5px;
-    }
-
-    /* home page */
-    #index-content-headings{
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 10px;
-    }
-
-    #index-content{
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 10px;
-    }
-
-    #update{
-        display: grid;
-        grid-template-columns: 1fr;
-    }
-
-    #update div{
-        margin-bottom: 20px;
-    }
-
-    /* hidden blog */
-    #update .hidden{
-        margin: 0px;
-        width: 100%;
-        left: 0px;
-    }
-
-    /* about page */
-    #about{
-        margin-top: 200px;
-        max-width: 1200px;
     }
 
     .pets img{
@@ -107,14 +46,22 @@
         grid-gap: 30px;
     }
 
-    #me, #stef{
+    .container{
+        margin: 50px;
+    }
+
+    section{
+        display: block;
+    }
+
+    #stef{
         display: block;
     }
 
     .image-container{
         float: none;
         margin: auto;
-        width: 100%; 
+        width: 100%;
     }
 
     /* code page*/
@@ -129,15 +76,7 @@
 
 @media screen and (max-width: 500px){
 
-    header{
-        /* font-size: 20px; */
-        /* display: flex; */
-        margin: auto;
-        /* justify-content: center; */
-        text-shadow: 1px 1px rgba(100, 180, 255, .75);
-    }
-    
-    header p{
+    .website-name{
         font-size: 20px;
     }
 
@@ -151,7 +90,7 @@
         text-align: center;
     }
 
-    .nav li{
+    #nav li{
         padding: 3px;
     }
 
@@ -204,16 +143,20 @@
         display: block; 
     }
 
-    section{
-        display: block;
+    .container{
+        margin: 20px;
     }
 
-    section.break{
+    section{
         display: block;
     }
 
     #stef{
         display: block;
+    }
+
+    #mainImage-container{
+        /* width: 100%; */
     }
 
     .image-container img{
@@ -231,232 +174,6 @@
 }
 
 
-/* 
-@keyframes shadow{
-    0%{
-    background: linear-gradient(90deg, rgb(141, 52, 52) 0%, blue 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    }
-    50%{
-        background: linear-gradient(90deg, rgb(141, 52, 52) 0%, blue 100%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-    100%{
-        background: linear-gradient(90deg, rgb(141, 52, 52) 0%, blue 100%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        }
-    
-} */
-
-=======
-/* LARGER TABLET / SMALL LAPTOP */
 
 
 
-
-
-@media screen and (max-width: 1100px){
-
-    #index-content{
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-gap: 15px;
-    }
-
-    /* hidden blog */
-    #update .hidden{
-        margin: 0px;
-        width: 100%;
-        left: 0px;
-    }
-
-    .close{
-        position: absolute;
-        top: 10px;
-        right: 10px;
-    }
-
-    /* about page */
-
-    #me, #stef{
-        margin-left: 50px;
-        margin-right: 50px;
-    }
-
-    .pets img{
-        padding: 0px; width: 100%;
-    }
-
-    #pets{
-        display: grid; 
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-gap: 30px;
-    }
-
-}
-
-
-
-/* TABLET OR IPAD SIZE */
-
-@media screen and (max-width: 800px){
-
-    header p{
-        font-size: 40px;
-    }
-
-    .nav{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        text-align: center;
-    }
-
-    .nav li{
-        padding: 5px;
-    }
-
-    /* home page */
-    #index-content-headings{
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 10px;
-    }
-
-    #index-content{
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 10px;
-    }
-
-    #update{
-        display: grid;
-        grid-template-columns: 1fr;
-    }
-
-    #update div{
-        margin-bottom: 20px;
-    }
-
-    /* hidden blog */
-    #update .hidden{
-        margin: 0px;
-        width: 100%;
-        left: 0px;
-    }
-
-    /* about page */
-    #about{
-        margin-top: 200px;
-        max-width: 1200px;
-    }
-
-    .pets img{
-        padding: 0px; width: 100%;
-    }
-
-    #pets{
-        display: grid; 
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 30px;
-    }
-
-    #me, #stef{
-        display: block;
-    }
-
-    .image-container{
-        float: none;
-        margin: auto;
-        width: 100%; 
-    }
-
-}
-
-/* PHONE SIZE */
-
-@media screen and (max-width: 500px){
-
-    header{
-        /* font-size: 20px; */
-        /* display: flex; */
-        margin: auto;
-        /* justify-content: center; */
-        text-shadow: 1px 1px rgba(100, 180, 255, .75);
-    }
-    
-    header p{
-        font-size: 20px;
-        display: flex;
-        margin: auto;
-        justify-content: center;
-    }
-    
-    .nav{
-        display: none;
-        text-align: center;
-    }
-
-    .nav li{
-        padding: 3px;
-    }
-
-    .nav-dots{
-        display: block;
-        margin-bottom: 5px;
-        width: 30%;
-    }
-
-    .pets img{
-        padding: 0px; width: 100%;
-    }
-
-    #pets{
-        display: block; 
-    }
-
-    section{
-        display: block;
-    }
-
-    section.break{
-        display: block;
-    }
-
-    #stef{
-        display: block;
-    }
-
-    #mainImage-container{
-        /* width: 100%; */
-    }
-
-    .image-container img{
-        width: 100%;
-        min-width: 200px;
-    }
-
-    
-}
-
-
-/* 
-@keyframes shadow{
-    0%{
-    background: linear-gradient(90deg, rgb(141, 52, 52) 0%, blue 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    }
-    50%{
-        background: linear-gradient(90deg, rgb(141, 52, 52) 0%, blue 100%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-    100%{
-        background: linear-gradient(90deg, rgb(141, 52, 52) 0%, blue 100%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        }
-    
-} */
-
->>>>>>> f4a73edb0c51d238bd2ea813f5e2d83dd47503b8
