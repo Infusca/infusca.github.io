@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 $(document).ready(function(){
 
   // $('#hiddenTitle').hide()
@@ -52,10 +51,6 @@ $('.close').click(function(){
 
 
 
-
-// ??
-
-
 function showTemplate(){
   var temp = document.getElementsByTagName('template')[0];
   var temp2 = $('.template')[0];
@@ -65,6 +60,7 @@ function showTemplate(){
 }
 
 
+
 });
 
 
@@ -72,16 +68,11 @@ function showTemplate(){
 
 
 /*********** NEW LAYOUT ************/
-let header = document.getElementsByTagName("header")[0];
-let headerHt = header.offsetHeight;
 
 
-(function(){
-  
-});
 
 function hideHeader(){
- 
+  let header = document.getElementsByTagName("header")[0];
   header.style.opacity = "0.2";
 
   window.addEventListener('mousemove', (e) => {
@@ -120,183 +111,35 @@ function findHt(){
   document.getElementsByClassName('container')[0].style.height = newHt;
   console.log(`viewportHeight: ${viewportHeight}, containerHeight: ${containerHeight}`);
 }
-// findHt();
 
-// allow user to access hidden nav on smaller screens
-let nav = $('.nav');
-
-function toggleNav(){
-  if (nav[0].style.display == 'none'){
-    nav[0].style.display = 'block';
-  } else {
-    nav[0].style.display = 'none';
-  }
+findHt();
 
 
-}
 
-function expandArticle(){
-  var target = $('sub')[0].innerHTML;
-  console.log(target);
-}
 
-function foodBlog(){
-  let blog = $('.hidden')[0];
-  if (blog.style.display == 'none'){
-    blog.style.display = 'block';
-  } else {
-    blog.style.display = 'none';
-  }
+  /********** Show pet stories when click on image **********/
+  // window.addEventListener('click', (e) => {
+  //   console.log(e.currentTarget.parent);
+  // });
   
-=======
-$(document).ready(function(){
-
-  // $('#hiddenTitle').hide()
-
-// animate page title when scroll down on page
-// NOT WORKING NEED TO FIGURE OUT
-  showSticky = $('.sticky')
-  if ($(document.body.scrollTop) > 150){
-    console.log('hi')
-  }
-  
-  
-
-// regarding old posts "archives"
-  $('.archived').hide();
-  $('#2021').click(function(){
-    $('.21').toggle();
-  });
-  $('#2022').click(function(){
-    $('.22').toggle();
-  });
-  
-  $('.lyrics').hide();
-
-// get target image and display modal
-$('.cd-img').click(function(e){
-  target = e.target;
-  targetID = target.id;
-  src = target.src;
-  img = getImg(src);
-  var modalImg = $('#modal-img')[0];
-  modalImg.src = '/images/music/' + img;
-  myModal.style.display = 'block';
-})
-
-// obtain file name of target image
-function getImg(src){
-  var targetImg;
-  targetImg = src.split();
-  fileName = targetImg[0].split('/')[5];
-  return fileName;
-}
-
-
-// close modal
-$('.close').click(function(){
-  myModal.style.display = 'none';
-})
+  // window.body.addEventListener('click', (e) => {
+  //   console.log(e);
+  // });
 
 
 
+/* hide nav on small screens */
+// main = document.getElementsByClassName('container');
+//   window.addEventListener('click', (e) => {
+//     document.getElementById('nav').style.display = 'none';
+//     document.getElementById('small-screen-nav-lines').style.display = 'block';
+    
+  // document.getElementById('small-screen-nav-lines').style.display = block;
+  // });
 
+  // window.addEventListener('click', (e) => {
+  //   document.getElementById('small-screen-nav-lines').style.display = 'block';
+    
+  // // document.getElementById('small-screen-nav-lines').style.display = block;
+  // });
 
-
-// ??
-
-
-function showTemplate(){
-  var temp = document.getElementsByTagName('template')[0];
-  var temp2 = $('.template')[0];
-  var clon = temp2.content.clondeNode(true);
-  document.body.appendChild(clon);
-  console.log(clon);
-}
-
-
-});
-
-
-
-
-
-/*********** NEW LAYOUT ************/
-let header = document.getElementsByTagName("header")[0];
-let headerHt = header.offsetHeight;
-
-
-(function(){
-  
-});
-
-function hideHeader(){
- 
-  header.style.opacity = "0.2";
-
-  window.addEventListener('mousemove', (e) => {
-    let xPos = e.clientX;
-    let yPos = e.clientY; 
-    if (yPos < 25){
-        header.style.opacity = '1';
-      };
-    if (e.clientY < 15){
-      header.style.opacity = '1';
-    }
-  });
-
-  if (scrollY > 50){
-    header.style.display = 'none';
-  };
-
-  if (scrollY < 50){
-    header.style.display = 'block';
-  }
-
-  if (scrollY == 0){
-    header.style.opacity = '1';
-  }
-  
-
-
-};
-
-/******** make height of container at so that footer is below bottom of viewport ********/
-function findHt(){
-  let viewportHeight = window.innerHeight;
-  let containerHeight = $('.container')[0].offsetHeight;
-  let newHt = '(containerHeight + 10)px';
-  console.log(`viewportHeight: ${viewportHeight}, containerHeight: ${containerHeight}`);
-  document.getElementsByClassName('container')[0].style.height = newHt;
-  console.log(`viewportHeight: ${viewportHeight}, containerHeight: ${containerHeight}`);
-}
-// findHt();
-
-// allow user to access hidden nav on smaller screens
-let nav = $('.nav');
-
-function toggleNav(){
-  if (nav[0].style.display == 'none'){
-    nav[0].style.display = 'block';
-  } else {
-    nav[0].style.display = 'none';
-  }
-
-
-}
-
-function expandArticle(){
-  var target = $('sub')[0].innerHTML;
-  console.log(target);
-}
-
-function foodBlog(){
-  let blog = $('.hidden')[0];
-  if (blog.style.display == 'none'){
-    blog.style.display = 'block';
-  } else {
-    blog.style.display = 'none';
-  }
-  
->>>>>>> f4a73edb0c51d238bd2ea813f5e2d83dd47503b8
-}
