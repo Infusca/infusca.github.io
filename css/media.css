@@ -42,6 +42,10 @@
         grid-gap: 30px;
     }
 
+    .gallery{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }
 
 
@@ -50,13 +54,9 @@
 
 @media screen and (max-width: 800px){
 
-    header p{
-        font-size: 40px;
-    }
 
     .nav{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        display: block;
         text-align: center;
     }
 
@@ -370,12 +370,6 @@
         width: 100%; 
     }
 
-    /* code page*/
-    #projects{
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 20px;
-    }
-
 }
 
 /* PHONE SIZE */
@@ -392,13 +386,11 @@
     
     header p{
         font-size: 20px;
-    }
-
-    .title-bar{
         display: flex;
+        margin: auto;
         justify-content: center;
     }
-
+    
     .nav{
         display: none;
         text-align: center;
@@ -408,45 +400,10 @@
         padding: 3px;
     }
 
-    .tribar{
+    .nav-dots{
         display: block;
-        font-size: 25px;
-        margin: 0px 15px;
-    }
-
-
-    /* home page */
-    #index-content-headings{
-        grid-template-columns: 1fr;
-        grid-gap: 10px;
-    }
-
-    #index-content{
-        grid-template-columns: 1fr ;
-        grid-gap: 10px;
-    }
-
-    #update{
-        display: grid;
-        grid-template-columns: 1fr;
-    }
-
-    #update div{
-        margin-bottom: 20px;
-    }
-
-    /* hidden blog */
-    #update .hidden{
-        margin: 0px;
-        width: 100%;
-        left: 0px;
-    }
-
-    /* about page */
-
-    #me, #stef{
-        margin-left: 25px;
-        margin-right: 25px;
+        margin-bottom: 5px;
+        width: 30%;
     }
 
     .pets img{
@@ -469,15 +426,13 @@
         display: block;
     }
 
+    #mainImage-container{
+        /* width: 100%; */
+    }
+
     .image-container img{
         width: 100%;
         min-width: 200px;
-    }
-
-    /* code page */
-    #projects{
-        grid-template-columns: 1fr;
-        grid-gap: 10px;
     }
 
     

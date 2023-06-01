@@ -15,18 +15,10 @@
     border-radius: 5px;
 }
 
-
-@media screen and (max-width: 1100px) {
-    .gallery{
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 10px;
-    }
-}
-
-
-@media screen and (max-width: 700px) {
-    .gallery{
-        grid-template-columns: 1fr;
-        grid-gap: 10px;
-    }
+.gallery{
+    /* text-align: center;
+    border: black;
+    border-style: solid;
+    font-size: 1.2vw; */
+    /* min-width: 100px; */
 }
