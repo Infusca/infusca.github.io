@@ -2,6 +2,10 @@
 
 @media screen and (max-width: 1100px){
 
+    #index-content{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
     .pets img{
         padding: 0px; width: 100%;
     }
@@ -32,10 +36,14 @@
         text-align: center;
     }
 
-    #nav li{
+    .nav li{
         padding: 5px;
     }
 
+    #index-content{
+        grid-template-columns: 1fr 1fr;
+    }
+    
     .pets img{
         padding: 0px; width: 100%;
     }
@@ -46,15 +54,12 @@
         grid-gap: 30px;
     }
 
-    .container{
-        margin: 50px;
-    }
 
     section{
         display: block;
     }
 
-    #stef{
+    #stef, #me{
         display: block;
     }
 
@@ -76,7 +81,7 @@
 
 @media screen and (max-width: 500px){
 
-    .website-name{
+    header p{
         font-size: 20px;
     }
 
@@ -90,7 +95,7 @@
         text-align: center;
     }
 
-    #nav li{
+    .nav li{
         padding: 3px;
     }
 
@@ -143,9 +148,7 @@
         display: block; 
     }
 
-    .container{
-        margin: 20px;
-    }
+
 
     section{
         display: block;
@@ -153,10 +156,6 @@
 
     #stef{
         display: block;
-    }
-
-    #mainImage-container{
-        /* width: 100%; */
     }
 
     .image-container img{
