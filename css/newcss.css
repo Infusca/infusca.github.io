@@ -15,7 +15,8 @@ a{
 }
 
 p{
-    font-size: 12px;    
+    font-size: 12px; 
+    text-align: center;   
 }
 
 #index-content hr{
@@ -26,7 +27,7 @@ p{
     height: 1px;
 }
 
-h5{
+h3, h5{
     padding-bottom: 5px;
     font-variant: small-caps;
 }
@@ -38,6 +39,7 @@ hr.break{
     width: 100%;
     min-width: 20px;
     box-shadow: 1px 1px 4px rgb(230, 80, 0, 75%);
+    margin-bottom: 50px;
 }
 
 section.break{
@@ -147,7 +149,7 @@ ul{
 }
 
 .video-container{
-    padding-bottom: 50%;
+    padding: 20px;
 }
 
 .video-container embed{
@@ -162,6 +164,7 @@ ul{
     background-size: cover;
     background-position: center;
     height: 500px;
+    box-shadow: 0px 1px 10px 1px orangered;
 }
 
 #index-content a{
@@ -192,8 +195,9 @@ section p{ padding: 10px; }
 
 #update{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     margin: 0px 30px;
+    gap: 50px;
 }
 
 #update img{
@@ -202,6 +206,9 @@ section p{ padding: 10px; }
 
 #update div{
     display: block;
+    border: 2px solid black;
+    padding: 10px;
+    box-shadow: 0px 1px 10px 1px rgb(0, 0, 0, 75%);
 }
 
 #update .hidden{
@@ -222,6 +229,14 @@ section p{ padding: 10px; }
     margin: auto;
 }
 
+#update h3{
+    text-align: left;
+}
+
+#update .date{
+    margin-left: 10px;
+}
+
 .close{
     position: absolute;
     top: 10px;
@@ -230,14 +245,23 @@ section p{ padding: 10px; }
 
 
 
+
 /* ABOUT */
 
 .bio{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
 }
 
+.bio img{
+    width: 100%;
+    max-width: 400px;
+}
 
+#me img{
+    box-shadow: 0px 1px 5px 1px black;
+}
 
 .image-container{
     width: 80em;
@@ -272,32 +296,13 @@ section p{ padding: 10px; }
 
 #about, #code{
     margin-top: 160px;
-    /* max-width: 1200px; */
-}
-
-#me, #stef{
-    margin-left: 100px;
-    margin-right: 100px;
 }
 
 
-#myImage{
-    margin-right: 50px;
-}
 
-#myImage img{
-    width: 100%;
-    min-width: 100px;
-    max-width: 400px;
-}
-
-.image-container img{
-    width: 100%;
-    min-width: 75px;
-}
-
-#stef img{
-    width: 55%;
+#stef-img{
+    width: 75%;
+    box-shadow: 0px 1px 10px 1px black;
 }
 
 #pets{
@@ -308,17 +313,22 @@ section p{ padding: 10px; }
 
 #pets img{
     width: 100%;
+
 }
 
 .pet{
-    border: black;
-    border-style: solid;
+    border 1px solid black;
     font-size: 1.2vw;
     margin: 5px 0px 5px 0px;
+    box-shadow: 0px 1px 5px 1px black;
 }
 
 #associated{
     display: block;
+}
+
+#associated p{
+text-align: center;
 }
 
 #associated-links{
@@ -341,21 +351,17 @@ section p{ padding: 10px; }
 img.favicons{
     width: 30px;
     margin: 10px 5px;
-}
-
-#stef p.favicons{
-    width: 30px;
-    margin: auto;
-}
-
-#stef p.favicons img{
-    width: 100%;
+    box-shadow: 0px 1px 1px 1px black;
 }
 
 #minelab-logo{
     width: 50px;
 }
 
+.about-break-head{
+    text-align: center;
+    margin-bottom: 50px;
+}
 
 
 /* CODE */
@@ -449,4 +455,5 @@ footer hr{
     height: 1px;
     margin: 50px 0px;
     border: 0;
+    box-shadow: 1px 1px 4px rgb(230, 80, 0, 75%);
 }

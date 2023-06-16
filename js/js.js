@@ -69,4 +69,19 @@
     }
   }
 
-// });
+// BLOG
+
+function loadSauceBlog(){
+  let f = document.getElementById('fuckYOU').src = 'https://www.google.com';
+  console.log(f);
+  // let iframe = document.getElementsByTagName('iframe');
+  // console.log(iframe[0].src);
+  // let baseURL = iframe[0].src.split('/');
+  // baseURL.pop([-1]);
+  // console.log(baseURL);
+  // let url = 'hotsauce.html';
+  // baseURL.push(url);
+  // console.log(baseURL);
+  // newURL = baseURL.join('/');
+  // console.log(newURL);
+}

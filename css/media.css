@@ -43,6 +43,10 @@
         grid-template-columns: 1fr 1fr;
     }
     
+    .bio img{
+        margin-bottom: 30px;
+    }
+
     .pets img{
         padding: 0px; width: 100%;
     }
@@ -90,6 +94,10 @@
     .title-bar{
         display: flex;
         justify-content: center;
+    }
+
+    .bio img{
+        margin-bottom: 50px;
     }
 
     .nav{
