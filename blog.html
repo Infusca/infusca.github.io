@@ -17,20 +17,60 @@
           <p id="blog-pagetitle"> Smoke on Horizon </p>
           <p> Blog </p>
         </div>
-        <hr>
+        <hr id="hrBlogTop">
            <ul id="blog-nav">
             <li><a href="index.html">return home</a></li>
             <li onclick="loadPrivateBlog()"><a href="">Private</a></li>
             <li onclick="loadTurnBlog()"><a href="">TurnKey Wood Crafts</a></li>
-            <li onclick="loadSauceBlog()"><a href="">Infusca's Fire</a></li>
+            <li onclick="loadSauceBlog()"><a href="" onclick="loadSauceBlog()">Infusca's Fire</a></li>
             <li onclick="loadMetalBlog()"><a href="">Beep Boop Nic</a></li>
+            <li onclick="loadYumBlog()"><a href="">Yums</a></li>
            </ul>
+        <hr id="hrBlogBottom">
     </header>
     
     <main>
-        <iframe id="fuckYOU" src="myblog.html" title="Blog">
 
-        </iframe>
+    <!-- BLOG HOME -->
+    <div>
+        <p> Welcome to my Blog page. Here I practice documenting my various activities and methods. Enjoy. </p>
+    </div>
+
+    <div class="homeBlog blog">
+        <div class="blogType blogHeadline">type</div><div class="blogTitle blogHeadline">blog title</div><div class="blogDate blogHeadline">date</div>
+        <p> A blog example. </p>
+    </div>
+
+    <div class="homeBlog blog">
+        <div class="blogType blogHeadline">type</div><div class="blogTitle blogHeadline">blog title</div><div class="blogDate blogHeadline">date</div>
+        <p> A blog example. </p>
+    </div>
+
+
+    <!-- ***************************************************************************************** -->
+    <!-- INFUSCA'S FIRE -->
+
+    <div id="fire" class="fireBlog blog">
+        <div class="blogType blogHeadline">Infusca's Fire</div><div class="blogTitle blogHeadline">blog title</div><div class="blogDate blogHeadline">date</div>
+        <div> <h1>Fire Woman Hot Sauce:</h1><br><h2>Arbol Chili</h2>
+            <div class="close"><h3 onclick="foodBlog()">X</h3></div>
+            <p>So, I've been making my own hot sauce. Fun, and now I never need to buy hot sauce again! Although I probably will. Especially if I travel abroad because there's nothing like trying the local hot sauce on your breakfast eggs.</p>
+            <p>So this weeks hot sauce is an arbol chili sauce, with tomatoes, onions, and garlic. </p>
+              <img src="images/hotSauce/arbol-chili/arbol-bag.jpeg"/>
+              <p>I used 20 arbol chilis and let them soak for an hour in a bowl of warm water. They actually needed to soak longer than that and I ran out of time so then I boiled them in some water for about 5 minutes which plumped them up right away.</p>
+              <img src="images/hotsauce/arbol-chili/dried-arbol-soaking.jpeg"/>
+            
+            <p> Meanwhile, I mixed up the onions and tomatoes with some oil, salt, and pepper and placed them on some foil to grill. I then cut off the top of an entire head of garlic and poured a little olive oil over it before placing in foil to grill as well.  </p>
+              <img src="images/hotSauce/arbol-chili/tom-onion-foil.jpeg"/>
+            <p> After everything is cooked, I blended together in the food processor, added vinegar, and voilà! Delicious hot sauce.</p>
+            <p> I forgot to continue taking photos of the process so unfortunetatly all you get to see now is the end result.</p>
+              <img src="images/hotSauce/arbol-chili/5-arbol-chili.jpeg"/>
+            <p> Always feel free to <a href="mailto:infusca@proton.me">reach out</a> to me if you are interested in purchasing any hot sauce! They run at $5 a bottle + shipping. </p>
+           <p><h3 onclick="foodBlog()">Close X</h3></p> </div>
+    </div>
+
+
+
     </main>
       
     <script src="js/jquery3.6.0.js"></script>

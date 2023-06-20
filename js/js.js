@@ -6,8 +6,6 @@
   let headerHt = header.offsetHeight;
 
   function hideHeader(){
-    console.log('test');
-  
     header.style.opacity = "0.2";
 
     window.addEventListener('mousemove', (e) => {
@@ -69,19 +67,106 @@
     }
   }
 
-// BLOG
+  // BLOG
 
-function loadSauceBlog(){
-  let f = document.getElementById('fuckYOU').src = 'https://www.google.com';
-  console.log(f);
-  // let iframe = document.getElementsByTagName('iframe');
-  // console.log(iframe[0].src);
-  // let baseURL = iframe[0].src.split('/');
-  // baseURL.pop([-1]);
-  // console.log(baseURL);
-  // let url = 'hotsauce.html';
-  // baseURL.push(url);
-  // console.log(baseURL);
-  // newURL = baseURL.join('/');
-  // console.log(newURL);
-}
+  // let fireBlog = getElementById('fire');
+
+  // function loadSauceBlog(){
+  //   console.log(fireBlog);
+  //   fireBlog.style.display = 'none';
+  // }
+
+  // MUSIC
+
+  // let songList = $('.song-list');
+  // let songNodes = songList[0].childNodes;
+  // console.log(songNodes);
+  
+  // for (i in songNodes){
+  //   console.log(i);
+  // }
+
+  // document.body.addEventListener('click', getSong);
+
+  function modelLyrics(){
+    let lyrics = $('#modelLyrics')[0];
+    if (lyrics.style.display == 'none'){
+      lyrics.style.display = 'block';
+    } else {
+      lyrics.style.display = 'none';
+    }
+  }
+
+  function infinityLyrics(){
+    let lyrics = $('#infinityLyrics')[0];
+    if (lyrics.style.display == 'none'){
+      lyrics.style.display = 'block';
+    } else {
+      lyrics.style.display = 'none';
+    }
+  }
+
+  function stateImInLyrics(){
+    let lyrics = $('#stateImInLyrics')[0];
+    if (lyrics.style.display == 'none'){
+      lyrics.style.display = 'block';
+    } else {
+      lyrics.style.display = 'none';
+    }
+  }
+
+  function largerThanSunLyrics(){
+    let lyrics = $('#largerThanSunLyrics')[0];
+    if (lyrics.style.display == 'none'){
+      lyrics.style.display = 'block';
+    } else {
+      lyrics.style.display = 'none';
+    }
+  }
+
+  function runLyrics(){
+    let lyrics = $('#runLyrics')[0];
+    if (lyrics.style.display == 'none'){
+      lyrics.style.display = 'block';
+    } else {
+      lyrics.style.display = 'none';
+    }
+  }
+
+  function pathOfStoneLyrics(){
+    let lyrics = $('#pathOfStoneLyrics')[0];
+    if (lyrics.style.display == 'none'){
+      lyrics.style.display = 'block';
+    } else {
+      lyrics.style.display = 'none';
+    }
+  }
+
+  function journeyLyrics(){
+    let lyrics = $('#journeyLyrics')[0];
+    if (lyrics.style.display == 'none'){
+      lyrics.style.display = 'block';
+    } else {
+      lyrics.style.display = 'none';
+    }
+  }
+
+  function closeLyrics(){
+    // let lyrics = $('#modelLyrics')[0];
+    // if (lyrics.style.display == 'none'){
+    //   lyrics.style.display = 'block';
+    // } else {
+    //   lyrics.style.display = 'none';
+    // }
+    
+    $('#modelLyrics')[0].style.display = 'none';
+    $('#infinityLyrics')[0].style.display = 'none';
+    $('#stateImInLyrics')[0].style.display = 'none';
+    $('#largerThanSunLyrics')[0].style.display = 'none';
+    $('#runLyrics')[0].style.display = 'none';
+    $('#pathOfStoneLyrics')[0].style.display = 'none';
+    $('#journeyLyrics')[0].style.display = 'none';
+  }
+
+
+// });

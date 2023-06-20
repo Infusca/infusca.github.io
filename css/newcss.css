@@ -27,7 +27,7 @@ p{
     height: 1px;
 }
 
-h3, h5{
+h3, h4, h5{
     padding-bottom: 5px;
     font-variant: small-caps;
 }
@@ -264,9 +264,9 @@ section p{ padding: 10px; }
 }
 
 .image-container{
-    width: 80em;
+    /* width: 80em;
     float: left;
-    width: 100%;
+    width: 100%; */
 }
 
 .codeImage-container{
@@ -294,7 +294,7 @@ section p{ padding: 10px; }
     margin: 30px;
 }
 
-#about, #code{
+#about, #music, #code{
     margin-top: 160px;
 }
 
@@ -378,9 +378,7 @@ img.favicons{
 .desc{
     display: block;
     width: 80%;
-    margin: auto;
-    
-    /* margin-bottom: 50px; */
+    margin: 50px auto;
 }
 
 #code img{
