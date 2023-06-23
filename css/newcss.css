@@ -5,7 +5,7 @@ ul {
 }
 
 body{
-    background: linear-gradient(60deg, rgb(30 50 100) 0%, rgb(200 200 230) 100%)
+    background: linear-gradient(60deg, antiquewhite 0%, rgb(66, 120, 255) 100%)
   }
 
 a{
@@ -68,29 +68,30 @@ flex-wrap: nowrap;
 position: fixed;
 top: 0px;
 right: 0px;
+border: 4px double orangered;
+border-color: darkorange;
+background-color: rgb(22, 22, 22);
+font-size: 50px;
+text-align: center;
 }
 
-header{
-    background-color: black;
-    font-size: 50px;
-    text-align: center;
-  }
-  
 header p{
-    color: black;
-    text-shadow: 2px 2px rgb(230, 80, 0);
-    font-size: 60px;
+    color: orangered;
+    text-shadow: 20px -5px 18px whitesmoke;
+    font-size: 65px;
     font-variant: small-caps;
+    padding-top: 20px;
 }
 
 header a:hover{
-    text-shadow: 2px 2px rgb(250, 60, 0, 0.5);
+    text-shadow: 2px 2px 2px orangered;
 }
 
 .nav{
     font-size: 14px;
     display: flex;
     justify-content: center;
+    padding: 10px;
 }
 
 .nav li{
@@ -122,8 +123,6 @@ ul{
 /**************** BODY ****************/
 .container {
     display: block;
-    /* text-align: center; */
-    /* bottom: 0px; */
 }
 
 #index-content{
@@ -143,13 +142,8 @@ ul{
     height: auto;
 }
 
-#index-content img{
-    width: 50%;
-    float: left;
-}
-
-.video-container{
-    padding: 20px;
+.backToTop{
+    /* float: right; */
 }
 
 .video-container embed{
@@ -165,6 +159,7 @@ ul{
     background-position: center;
     height: 500px;
     box-shadow: 0px 1px 10px 1px orangered;
+    margin-bottom: 5px;
 }
 
 #index-content a{
@@ -186,32 +181,69 @@ section{
     text-align: center;
 }
 
+#index-topics-menu li{
+    border: black;
+    box-shadow: 1px 0px 10px 1px black;
+    margin: 4px;
+    /* grid-gap: 4px; */
+    padding: 7px;
+    background-color: rgba(255, 69, 0, 75%);
+    box-shadow: 0px 1px 10px 1px orangered;
+}
+
+#index-topics-menu a{
+    color: whitesmoke;
+}
+
+#index-topics-menu ul{
+    display: flex;
+    justify-content: center;
+}
+
 h4{
     font-variant: small-caps;
     padding: 3px 0px;
 }
 
-section p{ padding: 10px; }
+section p{ padding: 5px; }
 
-#update{
+.top{
+    margin-bottom: 5px;
+    box-shadow: 0px 5px 10px 8px rgba(255, 69, 0, 50%);
+}
+
+.update-topic{
+    text-align: left;
+    margin: 30px 30px;
+}
+
+.update-topic h4{
+    margin-left: 10px;
+    padding: 0px;
+}
+
+.bottom{
+    margin-top: 5px;
+    box-shadow: 0px -5px 10px 8px rgba(255, 69, 0, 50%);
+}
+
+.update{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    margin: 0px 30px;
-    gap: 50px;
+    margin: 0px 30px 50px 30px;
+    gap: 30px;
 }
 
-#update img{
-    width: 80%;
+.update article{
+    height: 300px;
 }
 
-#update div{
-    display: block;
-    border: 2px solid black;
-    padding: 10px;
-    box-shadow: 0px 1px 10px 1px rgb(0, 0, 0, 75%);
+.update img{
+    height: 70%;
+    /* object-fit: cover; */
 }
 
-#update .hidden{
+.update .hidden{
     display: none;
     position: absolute;
     top: 0px;
@@ -219,21 +251,21 @@ section p{ padding: 10px; }
     width: 100%;
 }
 
-#update .hidden img{
+.update .hidden img{
     width: 50%;
     margin: auto;
 }
 
-#update .hidden p{
+.update .hidden p{
     width: 80%;
     margin: auto;
 }
 
-#update h3{
-    text-align: left;
+.update h3{
+    font-size: 14px;
 }
 
-#update .date{
+.update .date{
     margin-left: 10px;
 }
 
@@ -395,7 +427,21 @@ img.favicons{
 }
 
 .project div{
-    border: solid black;
+    border: black;
+    box-shadow: 1px 0px 10px 1px black;
+}
+
+article{
+    border: black;
+    box-shadow: 1px 0px 10px 1px black;
+    background-color: whitesmoke;
+}
+
+#index article{
+    height: 300px;
+    border: 2px solid black;
+    padding: 10px;
+    box-shadow: 0px 1px 10px 1px rgb(0, 0, 0, 75%);
 }
 
 
