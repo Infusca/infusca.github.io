@@ -93,3 +93,13 @@ img{
     color: white;
     padding: 3px;
 }
+
+#backToTop{
+    text-align: center;
+    margin: 30px;
+}
+
+input [type='text'], input [type='password']{
+    display: grid;
+    margin: 20px;
+}

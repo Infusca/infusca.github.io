@@ -58,14 +58,14 @@
     console.log(target);
   }
 
-  function foodBlog(){
-    let blog = $('.hidden')[0];
-    if (blog.style.display == 'none'){
-      blog.style.display = 'block';
-    } else {
-      blog.style.display = 'none';
-    }
-  }
+  // function foodBlog(){
+  //   let blog = $('.hidden')[0];
+  //   if (blog.style.display == 'none'){
+  //     blog.style.display = 'block';
+  //   } else {
+  //     blog.style.display = 'none';
+  //   }
+  // }
 
   // BLOG
 
@@ -170,3 +170,19 @@
 
 
 // });
+
+// index
+
+// let getTopicsMenu = $('#index-topics-menu')[0].children[0].children[3];
+
+console.log(window.innerWidth);
+// console.log(getTopicsMenu);
+
+  function hide(){
+    if (window.innerWidth <= 370){
+      getTopicsMenu.firstChild.innerHTML = 'Other';
+      console.log(window.innerWidth);
+    }
+  }
+
+  hide();

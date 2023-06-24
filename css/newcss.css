@@ -125,7 +125,7 @@ ul{
     display: block;
 }
 
-#index-content{
+/* #index-content{
     margin: 0px 30px 30px 30px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -140,7 +140,7 @@ ul{
 
 #index-content div{
     height: auto;
-}
+} */
 
 .backToTop{
     /* float: right; */
@@ -166,12 +166,12 @@ ul{
     padding: 10px;
 }
 
-#index-content-headings{
+/* #index-content-headings{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 30px;
     margin: 0px 30px 30px 30px;
-}
+} */
 
 section{
     display: flex;
@@ -399,6 +399,7 @@ img.favicons{
 
 #code h4{
     border: none;
+    margin-bottom: 5px;
 }
 
 .desc{
