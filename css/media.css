@@ -195,6 +195,12 @@
 
     section{
         display: block;
+        margin-bottom: 0px;
+    }
+
+    bg-top-img{
+        height: 400px;
+        background-position: top;
     }
 
     #stef{
