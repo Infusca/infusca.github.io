@@ -1,12 +1,14 @@
 * { margin: 0; font-family: verdana;}
 
+body{
+    background: linear-gradient(60deg, antiquewhite 0%, rgb(66, 120, 255) 100%);
+    display: flex;
+    flex-direction: column;
+  }
+
 ul {
     list-style-type: none;
 }
-
-body{
-    background: linear-gradient(60deg, antiquewhite 0%, rgb(66, 120, 255) 100%)
-  }
 
 a{
     color: black;
@@ -19,19 +21,10 @@ p{
     text-align: center;   
 }
 
-#index-content hr{
-    width: 10px;
-    background-color: black;
-    margin: auto;
-    border: 0;
-    height: 1px;
-}
-
 h3, h4, h5{
     padding-bottom: 5px;
     font-variant: small-caps;
 }
-
 
 hr.break{
     background-color: black;
@@ -121,29 +114,9 @@ ul{
 }
 
 /**************** BODY ****************/
-.container {
-    display: block;
-}
 
-/* #index-content{
-    margin: 0px 30px 30px 30px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 30px;
-}
-
-#index-content article{
-    border: solid 1px;
-    margin-bottom: 15px;
-    background-color: rgb(160, 170, 200);
-}
-
-#index-content div{
-    height: auto;
-} */
-
-.backToTop{
-    /* float: right; */
+main{
+    margin-top: 206px;
 }
 
 .video-container embed{
@@ -162,17 +135,6 @@ ul{
     margin-bottom: 5px;
 }
 
-#index-content a{
-    padding: 10px;
-}
-
-/* #index-content-headings{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 30px;
-    margin: 0px 30px 30px 30px;
-} */
-
 section{
     display: flex;
     flex-direction: column;
@@ -181,18 +143,20 @@ section{
     text-align: center;
 }
 
+#index{
+    margin-top: 156px;
+}
+
 #index-topics-menu li{
     border: black;
-    box-shadow: 1px 0px 10px 1px black;
-    margin: 4px;
-    /* grid-gap: 4px; */
-    padding: 7px;
-    background-color: rgba(255, 69, 0, 75%);
-    box-shadow: 0px 1px 10px 1px orangered;
+    box-shadow: 0px 0px 2px 2px rgb(60, 60, 60);
+    margin: 5px;
+    padding: 1px 10px;
+    background-color: whitesmoke;
 }
 
 #index-topics-menu a{
-    color: whitesmoke;
+    color: black;
 }
 
 #index-topics-menu ul{
@@ -291,8 +255,8 @@ section p{ padding: 5px; }
     max-width: 400px;
 }
 
-#me img{
-    box-shadow: 0px 1px 5px 1px black;
+#me{
+    box-shadow: 0px 1px 10px 1px black;
 }
 
 .codeImage-container{
@@ -316,14 +280,6 @@ section p{ padding: 5px; }
     max-width: 400px;
 }
 
-#about, #code{
-    margin: 30px;
-}
-
-#about, #music, #code{
-    margin-top: 160px;
-}
-
 
 
 #stef-img{
@@ -343,7 +299,7 @@ section p{ padding: 5px; }
 }
 
 .pet{
-    border 1px solid black;
+    /* border 1px solid black; */
     font-size: 1.2vw;
     margin: 5px 0px 5px 0px;
     box-shadow: 0px 1px 5px 1px black;
@@ -377,7 +333,7 @@ text-align: center;
 img.favicons{
     width: 30px;
     margin: 10px 5px;
-    box-shadow: 0px 1px 1px 1px black;
+    /* box-shadow: 0px 1px 1px 1px black; */
 }
 
 #minelab-logo{
@@ -402,11 +358,16 @@ img.favicons{
     margin-bottom: 5px;
 }
 
-.desc{
+.desc{ /* code page */
     display: block;
     width: 80%;
-    margin: 50px auto;
+    margin: auto;
 }
+
+#code section{
+    margin-bottom: 50px;
+}
+
 
 #code img{
     width: 50%;
@@ -485,7 +446,6 @@ footer{
     text-align: center;
     font-size: 12px;
     color: rgb(0, 0, 0);
-    /* padding: 20px; */
   }
 
 footer hr{
