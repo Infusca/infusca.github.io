@@ -291,6 +291,7 @@ section p{ padding: 5px; }
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 30px;
+    margin: 50px;
 }
 
 #pets img{
@@ -351,6 +352,7 @@ img.favicons{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 30px;
+    margin: 50px;
 }
 
 #code h4{
@@ -377,6 +379,10 @@ img.favicons{
     padding: 5px;
 }
 
+.project article{
+    min-height: 250px;
+}
+
 .project p{
     text-align: left;
 }
@@ -386,11 +392,6 @@ img.favicons{
     width: 100%;
     justify-content: center;
     float: left;
-}
-
-.project div{
-    border: black;
-    box-shadow: 1px 0px 10px 1px black;
 }
 
 article{
@@ -427,6 +428,9 @@ article{
 
 /* END OF WOOD */
 
+#metal{
+    margin: 206px 50px 0px 50px;
+}
 
 #metal-desc{
     grid-template-columns: 2fr 2fr;
