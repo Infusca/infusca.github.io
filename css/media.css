@@ -2,13 +2,14 @@
 
 @media screen and (max-width: 1030px){
 
-    /* #index-content{
-        grid-template-columns: 1fr 1fr;
-    } */
+    #wood{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
 
-    /* #index article{
-        height: 200px;
-    } */
+    #tops{
+        display: none;
+    }
 
     .pets img{
         padding: 0px; width: 100%;
@@ -25,13 +26,13 @@
     }
 
     .gallery{
-        display: grid;
         grid-template-columns: 1fr 1fr 1fr;
     }
 
     /* code page*/
     #projects{
-        grid-gap: 50px;
+        /* grid-gap: 30px; */
+        grid-template-columns: 1fr 1fr;
     }
 }
 
@@ -70,10 +71,6 @@
         grid-template-columns: 1fr;
     }
 
-    /* #index-content{
-        grid-template-columns: 1fr 1fr;
-    } */
-    
     .bio img{
         margin-bottom: 30px;
     }
@@ -106,11 +103,15 @@
     /* code page*/
     #projects{
         grid-template-columns: 1fr 1fr;
-        grid-gap: 50px;
+        /* grid-gap: 50px; */
     }
 
     #music article{
         width: 75%;
+    }
+
+    .gallery{
+        grid-template-columns: 1fr 1fr;
     }
 
 }
@@ -211,7 +212,7 @@
     /* code page */
     #projects{
         grid-template-columns: 1fr;
-        grid-gap: 50px;
+        /* grid-gap: 50px; */
     }
 
     #music article{
@@ -227,6 +228,11 @@
     #blog-nav a{
         font-size: 12px;
     }
+
+    .gallery{
+        grid-template-columns: 1fr;
+    }
+
 }
 
 
