@@ -1,6 +1,6 @@
-/**************** LARGER TABLET / SMALL LAPTOP 1030 ****************/
+/**************** PC / LAPTOP 1600 ****************/
 
-@media screen and (max-width: 1030px){
+@media screen and (max-width: 1600px){
 
     #wood{
         display: grid;
@@ -16,7 +16,7 @@
     }
 
     .update{
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 
     #pets{
@@ -31,14 +31,23 @@
 
     /* code page*/
     #projects{
-        /* grid-gap: 30px; */
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    /* photo page */
+    #photo{
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
     }
 }
 
-/**************** TABLET OR IPAD SIZE 730 ****************/
+/**************** TABLET OR IPAD SIZE 1200 ****************/
 
-@media screen and (max-width: 760px){
+@media screen and (max-width: 1200px){
+
+    .update{
+        grid-template-columns: 1fr 1fr;
+    }
 
     #about{
         margin-top: 50px;
@@ -65,10 +74,6 @@
 
     .nav li{
         padding: 5px;
-    }
-
-    .update{
-        grid-template-columns: 1fr;
     }
 
     .bio img{
@@ -103,7 +108,6 @@
     /* code page*/
     #projects{
         grid-template-columns: 1fr 1fr;
-        /* grid-gap: 50px; */
     }
 
     #music article{
@@ -114,11 +118,17 @@
         grid-template-columns: 1fr 1fr;
     }
 
+    /* photo page */
+    #photo{
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
 }
 
 /**************** PHONE SIZE 550 ****************/
 
-@media screen and (max-width: 550px){
+@media screen and (max-width: 700px){
 
     header p{
         font-size: 20px;
@@ -159,13 +169,6 @@
     #update div{
         margin-bottom: 20px;
     }
-
-    /* hidden blog */
-    /* #update .hidden{
-        margin: 0px;
-        width: 100%;
-        left: 0px;
-    } */
 
     .hide{
         display: none;
@@ -212,7 +215,6 @@
     /* code page */
     #projects{
         grid-template-columns: 1fr;
-        /* grid-gap: 50px; */
     }
 
     #music article{
@@ -231,6 +233,12 @@
 
     .gallery{
         grid-template-columns: 1fr;
+    }
+
+    /* photo page */
+    #photo{
+        grid-template-columns: 1fr;
+        gap: 10px;
     }
 
 }

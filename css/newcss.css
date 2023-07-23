@@ -185,7 +185,7 @@ section p{ padding: 5px; }
 
 .update{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     margin: 0px 30px 50px 30px;
     gap: 30px;
 }
@@ -219,6 +219,16 @@ section p{ padding: 5px; }
     width: 75% !important;
     z-index: 2;
     transform: translate(-50%, -50%);
+}
+
+.maxHeight{
+    max-height: 750px;
+    width: auto;
+}
+
+.maxWidth{
+    max-width: 1200px;
+    height: auto;
 }
 
 .update .hidden{
@@ -349,7 +359,6 @@ text-align: center;
 img.favicons{
     width: 30px;
     margin: 10px 5px;
-    /* box-shadow: 0px 1px 1px 1px black; */
 }
 
 #minelab-logo{
@@ -365,9 +374,8 @@ img.favicons{
 /* CODE */
 #projects{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 30px;
-    margin: 50px;
 }
 
 #code h4{
@@ -474,4 +482,19 @@ footer hr{
     margin: 50px 0px;
     border: 0;
     box-shadow: 1px 1px 4px rgb(230, 80, 0, 75%);
+}
+
+
+/* PHOTO */ 
+
+#photo{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+    background-color: whitesmoke;
+    padding: 10px;
+}
+
+#photo img{
+    width: 100%;
 }

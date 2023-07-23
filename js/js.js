@@ -155,12 +155,23 @@ console.log(window.innerWidth);
     let targetId = e.target.id;
     let target = document.querySelector('#' + targetId);
     
-    if (target.className == 'enlarged'){
+    if (target.className == 'enlarged' || target.className == 'enlarged maxHeight'){
       target.className = '';
       bg.style.display = 'none';
     } else{
       bg.style.display = 'block';
       target.className = 'enlarged';
+      // Set max size of image, based on dimensions
+      let w = target.offsetWidth;
+      let h = target.offsetHeight;
+      if (h > 750){
+        target.classList.add('maxHeight');
+      }
+      if (h > w){
+        let image = document.querySelector('.enlarged');
+        image.style.width = auto;
+        console.log(image);
+      }
     }
         
     console.log(target);
