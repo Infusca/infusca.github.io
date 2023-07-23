@@ -1,7 +1,5 @@
 
 
-// (function(){
-
   let header = document.getElementsByTagName("header")[0];
   let headerHt = header.offsetHeight;
 
@@ -57,36 +55,6 @@
     var target = $('sub')[0].innerHTML;
     console.log(target);
   }
-
-  // function foodBlog(){
-  //   let blog = $('.hidden')[0];
-  //   if (blog.style.display == 'none'){
-  //     blog.style.display = 'block';
-  //   } else {
-  //     blog.style.display = 'none';
-  //   }
-  // }
-
-  // BLOG
-
-  // let fireBlog = getElementById('fire');
-
-  // function loadSauceBlog(){
-  //   console.log(fireBlog);
-  //   fireBlog.style.display = 'none';
-  // }
-
-  // MUSIC
-
-  // let songList = $('.song-list');
-  // let songNodes = songList[0].childNodes;
-  // console.log(songNodes);
-  
-  // for (i in songNodes){
-  //   console.log(i);
-  // }
-
-  // document.body.addEventListener('click', getSong);
 
   function modelLyrics(){
     let lyrics = $('#modelLyrics')[0];
@@ -152,12 +120,6 @@
   }
 
   function closeLyrics(){
-    // let lyrics = $('#modelLyrics')[0];
-    // if (lyrics.style.display == 'none'){
-    //   lyrics.style.display = 'block';
-    // } else {
-    //   lyrics.style.display = 'none';
-    // }
     
     $('#modelLyrics')[0].style.display = 'none';
     $('#infinityLyrics')[0].style.display = 'none';
@@ -169,14 +131,7 @@
   }
 
 
-// });
-
-// index
-
-// let getTopicsMenu = $('#index-topics-menu')[0].children[0].children[3];
-
 console.log(window.innerWidth);
-// console.log(getTopicsMenu);
 
   function hide(){
     if (window.innerWidth <= 370){
@@ -186,3 +141,35 @@ console.log(window.innerWidth);
   }
 
   hide();
+
+  // INDEX PAGE ****
+
+  // Select all the images on the index page
+  let images = document.querySelector('.update').getElementsByTagName('img');
+  
+  // Get target clicked image
+  let getTarget = e => {
+    // load background for enlarged image
+    let bg = document.querySelector('.enlarged-background');
+
+    let targetId = e.target.id;
+    let target = document.querySelector('#' + targetId);
+    
+    if (target.className == 'enlarged'){
+      target.className = '';
+      bg.style.display = 'none';
+    } else{
+      bg.style.display = 'block';
+      target.className = 'enlarged';
+    }
+        
+    console.log(target);
+    
+  }
+
+  // On mouse click, enlarge image
+  for (i=0; i<images.length; i++){
+    // console.log(images[i]);
+    images[i].addEventListener('click', getTarget);
+  }
+  
