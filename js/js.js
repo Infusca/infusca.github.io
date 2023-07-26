@@ -144,9 +144,9 @@ console.log(window.innerWidth);
 
   // INDEX PAGE ****
 
-  // Select all the images on the index page
-  let images = document.querySelector('.update').getElementsByTagName('img');
-  
+  // Select all the indexImages on the index page
+  let indexImages = document.querySelector('.update').getElementsByTagName('img');
+
   // Get target clicked image
   let getTarget = e => {
     // load background for enlarged image
@@ -179,8 +179,7 @@ console.log(window.innerWidth);
   }
 
   // On mouse click, enlarge image
-  for (i=0; i<images.length; i++){
-    // console.log(images[i]);
-    images[i].addEventListener('click', getTarget);
+  for (i=0; i<indexImages.length; i++){
+    indexImages[i].addEventListener('click', getTarget);
   }
   

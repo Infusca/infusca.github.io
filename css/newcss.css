@@ -223,7 +223,7 @@ section p{ padding: 5px; }
 
 .maxHeight{
     max-height: 750px;
-    width: auto;
+    max-width: 750px;
 }
 
 .maxWidth{
@@ -497,4 +497,8 @@ footer hr{
 
 #photo img{
     width: 100%;
+}
+
+#photo img:hover{
+    cursor: pointer;
 }
