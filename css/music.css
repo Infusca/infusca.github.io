@@ -69,3 +69,7 @@ p.song-title:hover{
 #lyrics{
     display: none;
 }
+
+.modalSongLyrics{
+    overflow: scroll;
+}

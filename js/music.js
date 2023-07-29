@@ -25,13 +25,13 @@ let getSongID = e => {
     }
 
     targetID = e.target.innerText.replace(/[ ()\']/g, m => createIDs[m]).toLowerCase();
-    
     musicModal.style.display = 'flex';
+
+    console.log(targetID);
 
     // Grab song lyrics
     allLyrics = document.querySelector('#lyrics');
     targetSong = allLyrics.querySelector('#'+targetID);
-    // console.log(targetSong);
     songTitle = targetSong.querySelector('h4').textContent;
     targetLyricsHtml = targetSong.querySelector('div').innerHTML;
     
@@ -48,9 +48,6 @@ let getSongID = e => {
     titleNode = document.createTextNode(songTitle);
     h.appendChild(titleNode);
     lyricModal.appendChild(h);
-    // lyricModal.setHTML(songTitle);
-    // parent = document.getElementsByClassName('modalTitle')[0].parentElement;
-    // console.log(parent);
     
     // Set placement of title above lyrics
     lyricModal.querySelector('h4').setAttribute('class', 'modalSongTitle');
@@ -65,6 +62,7 @@ let getSongID = e => {
     lyricModal.style.padding = '10px';
     lyricModal.style.scrolling = 'auto';
 
+    // modalSongLyrics.style.maxHeight = window.innerHeight - 50;
     
 
 }

@@ -132,6 +132,7 @@
 
 
 console.log(window.innerWidth);
+console.log(window.innerHeight);
 
   function hide(){
     if (window.innerWidth <= 370){
