@@ -42,12 +42,13 @@ let getSongID = e => {
     // lyricNode.setAttribute('id', 'selectedLyrics');
     lyricModal.appendChild(lyricNode);
     lyricModal.setHTML(targetLyricsHtml);
-
+    
     // Create node to append song title
     h = document.createElement('h4');
     titleNode = document.createTextNode(songTitle);
     h.appendChild(titleNode);
     lyricModal.appendChild(h);
+    console.log(titleNode);
     
     // Set placement of title above lyrics
     lyricModal.querySelector('h4').setAttribute('class', 'modalSongTitle');
