@@ -1,0 +1,45 @@
+.gallery{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.gallery img{
+    width: 100%;
+    padding: 1px;
+    box-shadow: 1px 1px 4px;
+    border-radius: 5px;
+}
+
+figure{
+    border: black;
+    box-shadow: 1px 0px 10px 1px black;
+    background-color: whitesmoke;
+    padding: 0px;
+}
+
+.active{
+    display: block;
+}
+
+.inactive{
+    display: none;
+}
+
+figure img:hover{
+    cursor: pointer;
+}
+
+figcaption{
+    font-variant: small-caps;
+    padding: 2px;
+}
+
+.gallery p{
+    display: none;
+    font-variant: none;
+}
+
+sub:hover{
+    cursor: pointer;
+}

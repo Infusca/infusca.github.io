@@ -114,19 +114,20 @@
         width: 75%;
     }
 
-    .gallery{
-        grid-template-columns: 1fr 1fr;
-    }
-
     /* photo page */
     #photo{
         grid-template-columns: 1fr 1fr;
         gap: 10px;
     }
 
+    /* metal page */
+    .gallery{
+        grid-template-columns: 1fr 1fr;
+    }
+
 }
 
-/**************** PHONE SIZE 550 ****************/
+/**************** PHONE SIZE 700 ****************/
 
 @media screen and (max-width: 700px){
 
@@ -198,7 +199,7 @@
         margin-bottom: 0px;
     }
 
-    bg-top-img{
+    #bg-top-img{
         height: 400px;
         background-position: top;
     }
