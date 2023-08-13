@@ -1,6 +1,6 @@
 #wood{
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     width: 70%;
     margin: auto;
     gap: 50px;

@@ -2,10 +2,10 @@
 
 @media screen and (max-width: 1600px){
 
-    #wood{
+    /* #wood{
         display: grid;
         grid-template-columns: 1fr;
-    }
+    } */
 
     #tops{
         display: none;
@@ -125,6 +125,10 @@
         grid-template-columns: 1fr 1fr;
     }
 
+    #metal{
+        margin: 106px 50px 0px 50px;
+    }
+
 }
 
 /**************** PHONE SIZE 700 ****************/
@@ -196,7 +200,7 @@
 
     section{
         display: block;
-        margin-bottom: 0px;
+        margin-bottom: 20px;
     }
 
     #bg-top-img{
@@ -240,6 +244,16 @@
     #photo{
         grid-template-columns: 1fr;
         gap: 10px;
+    }
+
+    /* metal page */
+    #metal{
+        margin: 50px 30px 0px 50px;
+    }
+
+    /* wood page */
+    #wood{
+        grid-template-columns: 1fr;
     }
 
 }
