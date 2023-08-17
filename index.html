@@ -36,7 +36,84 @@
 
       <!-- Smoke On Horizon topic -->
       <section class="update">
-        
+
+        <!-- Pop up section main page posts -->
+        <div class="main-post-bg"></div>
+        <div class="main-page-post"> <p id="main-popup-x">X</p> </div>
+
+        <!-- Posts -->
+        <article class="music-article">
+          <img id="amythest" class="thumbnail" src="images\posts\rockgemshow23\amythest-crystal.png"/>
+          <h3> East Coast Mineral and Gem Show</h3>
+          <p> Stef and I finally made it back to this beloved show after a several year haetus. I don't know why we stopped going. I used to go every year. So many amazing rocks to look at, and buy. And not just rocks, but fossils, and other fun stuff. Click <span id="rockgem-post" class="link">here</span> to see my other treasures. </p>
+        </article>
+
+        <div id="rockgem-show" class="hidden-post">
+          <section class="slideshow-container">
+            <div class="mySlides fade">
+              <div class="text">Amythest</div> <br>
+              <img src="images/posts/rockgemshow23/amythest-crystal.png" style="width:100%">
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="text">Black or Smokey Quartz Geode</div> <br>
+              <img src="images/posts/rockgemshow23/black-quartz-geode.png" style="width:100%">
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="text">Moon Coin</div> <br>
+              <img src="images/posts/rockgemshow23/moon-coin.png" style="width:100%">
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="text">Boulder Opal</div> <br>
+              <img src="images/posts/rockgemshow23/boulder-opal.png" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+              <div class="text">Boulder Opal</div> <br>
+              <img src="images/posts/rockgemshow23/boulder-opal-fit.png" style="width:100%">
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="text">Pietersite</div> <br>
+              <img src="images/posts/rockgemshow23/pietersite.png" style="width:100%">
+            </div>
+  
+            <div class="mySlides fade">
+              <div class="text">Serpentinite</div> <br>
+              <img src="images/posts/rockgemshow23/serpentinite.png" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+              <div class="text">Serpentinite</div> <br>
+              <img src="images/posts/rockgemshow23/serpentinite-wings.png" style="width:100%">
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="text">Chalcanthite</div> <br>
+              <img src="images/posts/rockgemshow23/chalcanthite.png" style="width:100%">
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="text">Serpentinite</div> <br>
+              <img src="images/posts/rockgemshow23/serpentinite2.png" style="width:100%">
+            </div>
+    
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+          </section>
+    
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+            <span class="dot" onclick="currentSlide(4)"></span> 
+            <span class="dot" onclick="currentSlide(5)"></span> 
+            <span class="dot" onclick="currentSlide(6)"></span> 
+          </div>
+        </div>
+
         <article class="music-article">
           <div class="video-container"><embed type="video/webm" src="https://www.youtube.com/embed/MLQhZuezp7g" height=""></div>
           <h3> Ren - Murderer</h3>
@@ -46,7 +123,6 @@
         <article class="update-article">
           <a href="https://smokeonhorizon.com/blog.html#picklesNsauce"><img id="" class="thumbnail" src="images/posts/picklesNsauce.png"/></a>
           <h3> New blog post </h3>
-          <!-- <p> New blog post </p> -->
         </article>
 
         <article class="update-article">
@@ -133,6 +209,10 @@
 
       <div class="enlarged-background"></div>
 
+      <!-- HIDDEN POSTS -->
+
+      
+
     </main>
 
 
@@ -147,6 +227,7 @@
     <script src="js/jquery3.6.0.js"></script>
     <script defer src="js/js.js"></script>
     <script defer src="js/index.js"></script>
+    <script defer src="js/slideshow.js"></script>
 
   </body>
 </html>

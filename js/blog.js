@@ -1,3 +1,17 @@
+// HEADER
+
+let yum = document.getElementById('yum');
+console.log(yum.offsetHeight);
+
+function onScrollHeader(){
+    window.addEventListener('scroll', (e) => {
+        console.log('scrolling');
+        yum.style.height = '50px';
+    });
+  };
+
+// BLOG POSTS
+
 let arbolChili = $('#arbolchilihotsauce')[0];
 let buffalocalzone = $('#buffalochickencalzone')[0];
 let picklesNsauce = $('#picklesNsauce')[0];
@@ -36,32 +50,3 @@ function showPicklesNSauce(e){
     console.log(blogTargetID);
 }
 
-
-
-// function showStories(e){
-//     buffalocalzone.style.display = 'none';
-//     arbolChili.style.display = 'none';
-//     stories.style.display = 'block';
-//     targetID = e.target.href.split('#')[1];
-//     let blogTargetID = '#'+targetID;
-//     console.log(blogTargetID);
-// }
-
-// var attempt = 3;
-// function validate(){
-//     var username = document.getElementById('username').value;
-//     var password = document.getElementById('password').value;
-//     if (username == 'infusca' && password == 'admin84'){
-//         window.location = 'blog/stories.html'; // log into stories page
-//         return false;
-//     } else {
-//         attempt --;
-//         alert('Insuccessful Login Attempt. You will now be eliminated.');
-//         if (attempt == 0){
-//             $('#username').disabled = true;
-//             $('password').disabled = true;
-//             return false;
-//         }
-//     }
-//     console.log(attempt);
-// }

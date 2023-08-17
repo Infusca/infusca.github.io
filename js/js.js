@@ -1,146 +1,147 @@
 
 
-  let header = document.getElementsByTagName("header")[0];
-  let headerHt = header.offsetHeight;
+let header = document.getElementsByTagName("header")[0];
+let headerHt = header.offsetHeight;
 
-  function hideHeader(){
-    header.style.opacity = "0.2";
+function hideHeader(){
+  header.style.opacity = "0.2";
 
-    window.addEventListener('mousemove', (e) => {
-      let xPos = e.clientX;
-      let yPos = e.clientY; 
-      if (yPos < 25){
-          header.style.opacity = '1';
-        };
-      if (e.clientY < 15){
+  window.addEventListener('mousemove', (e) => {
+    let xPos = e.clientX;
+    let yPos = e.clientY; 
+    if (yPos < 25){
         header.style.opacity = '1';
-      }
-    });
-
-    if (scrollY > 50){
-      header.style.display = 'none';
-    };
-
-    if (scrollY < 50){
-      header.style.display = 'block';
-    }
-
-    if (scrollY == 0){
+      };
+    if (e.clientY < 15){
       header.style.opacity = '1';
     }
+  });
+
+  if (scrollY > 50){
+    header.style.display = 'none';
   };
 
-  /******** make height of container at so that footer is below bottom of viewport ********/
-  function findHt(){
-    let viewportHeight = window.innerHeight;
-    let containerHeight = $('.container')[0].offsetHeight;
-    let newHt = '(containerHeight + 10)px';
-    console.log(`viewportHeight: ${viewportHeight}, containerHeight: ${containerHeight}`);
-    document.getElementsByClassName('container')[0].style.height = newHt;
-    console.log(`viewportHeight: ${viewportHeight}, containerHeight: ${containerHeight}`);
+  if (scrollY < 50){
+    header.style.display = 'block';
   }
 
-  // allow user to access hidden nav on smaller screens
-  let nav = $('.nav');
-
-  function toggleNav(){
-    if (nav[0].style.display == 'none'){
-      nav[0].style.display = 'block';
-    } else {
-      nav[0].style.display = 'none';
-    }
+  if (scrollY == 0){
+    header.style.opacity = '1';
   }
+};
 
-  function expandArticle(){
-    var target = $('sub')[0].innerHTML;
-    console.log(target);
-  }
+/******** make height of container at so that footer is below bottom of viewport ********/
+function findHt(){
+  let viewportHeight = window.innerHeight;
+  let containerHeight = $('.container')[0].offsetHeight;
+  let newHt = '(containerHeight + 10)px';
+  console.log(`viewportHeight: ${viewportHeight}, containerHeight: ${containerHeight}`);
+  document.getElementsByClassName('container')[0].style.height = newHt;
+  console.log(`viewportHeight: ${viewportHeight}, containerHeight: ${containerHeight}`);
+}
 
-  function modelLyrics(){
-    let lyrics = $('#modelLyrics')[0];
-    if (lyrics.style.display == 'none'){
-      lyrics.style.display = 'block';
-    } else {
-      lyrics.style.display = 'none';
-    }
-  }
+// allow user to access hidden nav on smaller screens
+let nav = $('.nav');
 
-  function infinityLyrics(){
-    let lyrics = $('#infinityLyrics')[0];
-    if (lyrics.style.display == 'none'){
-      lyrics.style.display = 'block';
-    } else {
-      lyrics.style.display = 'none';
-    }
+function toggleNav(){
+  if (nav[0].style.display == 'none'){
+    nav[0].style.display = 'block';
+  } else {
+    nav[0].style.display = 'none';
   }
+}
 
-  function stateImInLyrics(){
-    let lyrics = $('#stateImInLyrics')[0];
-    if (lyrics.style.display == 'none'){
-      lyrics.style.display = 'block';
-    } else {
-      lyrics.style.display = 'none';
-    }
-  }
+function expandArticle(){
+  var target = $('sub')[0].innerHTML;
+  console.log(target);
+}
 
-  function largerThanSunLyrics(){
-    let lyrics = $('#largerThanSunLyrics')[0];
-    if (lyrics.style.display == 'none'){
-      lyrics.style.display = 'block';
-    } else {
-      lyrics.style.display = 'none';
-    }
+function modelLyrics(){
+  let lyrics = $('#modelLyrics')[0];
+  if (lyrics.style.display == 'none'){
+    lyrics.style.display = 'block';
+  } else {
+    lyrics.style.display = 'none';
   }
+}
 
-  function runLyrics(){
-    let lyrics = $('#runLyrics')[0];
-    if (lyrics.style.display == 'none'){
-      lyrics.style.display = 'block';
-    } else {
-      lyrics.style.display = 'none';
-    }
+function infinityLyrics(){
+  let lyrics = $('#infinityLyrics')[0];
+  if (lyrics.style.display == 'none'){
+    lyrics.style.display = 'block';
+  } else {
+    lyrics.style.display = 'none';
   }
+}
 
-  function pathOfStoneLyrics(){
-    let lyrics = $('#pathOfStoneLyrics')[0];
-    if (lyrics.style.display == 'none'){
-      lyrics.style.display = 'block';
-    } else {
-      lyrics.style.display = 'none';
-    }
+function stateImInLyrics(){
+  let lyrics = $('#stateImInLyrics')[0];
+  if (lyrics.style.display == 'none'){
+    lyrics.style.display = 'block';
+  } else {
+    lyrics.style.display = 'none';
   }
+}
 
-  function journeyLyrics(){
-    let lyrics = $('#journeyLyrics')[0];
-    if (lyrics.style.display == 'none'){
-      lyrics.style.display = 'block';
-    } else {
-      lyrics.style.display = 'none';
-    }
+function largerThanSunLyrics(){
+  let lyrics = $('#largerThanSunLyrics')[0];
+  if (lyrics.style.display == 'none'){
+    lyrics.style.display = 'block';
+  } else {
+    lyrics.style.display = 'none';
   }
+}
 
-  function closeLyrics(){
-    
-    $('#modelLyrics')[0].style.display = 'none';
-    $('#infinityLyrics')[0].style.display = 'none';
-    $('#stateImInLyrics')[0].style.display = 'none';
-    $('#largerThanSunLyrics')[0].style.display = 'none';
-    $('#runLyrics')[0].style.display = 'none';
-    $('#pathOfStoneLyrics')[0].style.display = 'none';
-    $('#journeyLyrics')[0].style.display = 'none';
+function runLyrics(){
+  let lyrics = $('#runLyrics')[0];
+  if (lyrics.style.display == 'none'){
+    lyrics.style.display = 'block';
+  } else {
+    lyrics.style.display = 'none';
   }
+}
+
+function pathOfStoneLyrics(){
+  let lyrics = $('#pathOfStoneLyrics')[0];
+  if (lyrics.style.display == 'none'){
+    lyrics.style.display = 'block';
+  } else {
+    lyrics.style.display = 'none';
+  }
+}
+
+function journeyLyrics(){
+  let lyrics = $('#journeyLyrics')[0];
+  if (lyrics.style.display == 'none'){
+    lyrics.style.display = 'block';
+  } else {
+    lyrics.style.display = 'none';
+  }
+}
+
+function closeLyrics(){
+  
+  $('#modelLyrics')[0].style.display = 'none';
+  $('#infinityLyrics')[0].style.display = 'none';
+  $('#stateImInLyrics')[0].style.display = 'none';
+  $('#largerThanSunLyrics')[0].style.display = 'none';
+  $('#runLyrics')[0].style.display = 'none';
+  $('#pathOfStoneLyrics')[0].style.display = 'none';
+  $('#journeyLyrics')[0].style.display = 'none';
+}
 
 
 console.log(window.innerWidth);
 console.log(window.innerHeight);
 
-  function hide(){
-    if (window.innerWidth <= 370){
-      getTopicsMenu.firstChild.innerHTML = 'Other';
-      console.log(window.innerWidth);
-    }
+function hide(){
+  if (window.innerWidth <= 370){
+    getTopicsMenu.firstChild.innerHTML = 'Other';
+    console.log(window.innerWidth);
   }
+}
 
-  hide();
+hide();
 
-  
+
+
