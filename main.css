@@ -2,6 +2,12 @@
 
 /*-----------------------------------------------------*/
 /* HEADER **********************************************/
+
+#under-construction{
+    margin: 50px;
+    text-align: center;
+}
+
 header{
     padding: 10px 20px;
     height: 50px;
