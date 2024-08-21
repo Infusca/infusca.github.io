@@ -1,0 +1,104 @@
+*{ margin: 0; font-family: corbel;}
+
+/*-----------------------------------------------------*/
+/* HEADER **********************************************/
+header{
+    padding: 10px 20px;
+    height: 50px;
+    position: relative;
+    background-color: rgb(30, 30, 30);
+    color: antiquewhite;
+    text-align: start;
+    box-shadow: 0px 4px 10px rgb(100, 150, 230);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+h2{
+    font-weight: none;
+    font-weight: 0;
+}
+
+h2:hover{
+    cursor: pointer;
+}
+
+#social-media-nav{
+    width: 50%;
+    display: none;
+    justify-content: end;
+    gap: 10px;
+}
+
+#social-media-nav img{
+    width: 25px;
+    aspect-ratio: 1/1;
+}
+
+
+/*-----------------------------------------------------*/
+/* MAIN ************************************************/
+#home section{
+    margin: 10% auto;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+ul{
+    padding: 0;
+    list-style: none;
+}
+
+
+/*-----------------------------------------------------*/
+/* FOOTER **********************************************/
+footer{
+    text-align: center;
+}
+
+footer .menu{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+footer{
+    color: antiquewhite;
+    font-size: 14x;
+    margin-top: 250px 0px;
+    padding-bottom: 150px;
+    background-color: rgb(30, 30, 30);
+    padding-top: 150px;
+}
+
+footer p{
+    padding: 15px;
+    line-height: 2;
+    letter-spacing: 4px;
+    font-size: 10px;
+}
+
+hr{
+    margin: auto;
+    width: 25%;
+    margin-top: 10px;
+}
+
+footer a{
+    color: antiquewhite;
+    font-size: 0.75em;
+    letter-spacing: 4px;
+}
+
+footer a:hover{
+    text-shadow: 1px 1px 1px white;
+    text-decoration: line-through;
+}
+
+footer li{
+    margin: 10px;
+}
